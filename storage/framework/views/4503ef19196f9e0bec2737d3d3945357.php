@@ -1,0 +1,4 @@
+
+
+ <?php echo $__env->make('theme::widgets.peta_lokasi_kantor', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+<?php /**PATH /Users/akmalfadli/Developer/desa-digital/wiradesa//desa/themes/perwira/resources/views/partials/location.blade.php ENDPATH**/ ?>

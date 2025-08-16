@@ -1,0 +1,357 @@
+[2025-08-14 13:27:13] opensid.ERROR: Severity: error --> Exception: Class "Illuminate\Foundation\Application" not found /Users/akmalfadli/Developer/desa-digital/OpenSID-2505.0.0/bootstrap/app.php 7
+[2025-08-14 13:27:15] opensid.ERROR: Severity: error --> Exception: Class "Illuminate\Foundation\Application" not found /Users/akmalfadli/Developer/desa-digital/OpenSID-2505.0.0/bootstrap/app.php 7
+[2025-08-14 13:27:15] opensid.ERROR: Severity: error --> Exception: Class "Illuminate\Foundation\Application" not found /Users/akmalfadli/Developer/desa-digital/OpenSID-2505.0.0/bootstrap/app.php 7
+[2025-08-14 13:27:15] opensid.ERROR: Severity: error --> Exception: Class "Illuminate\Foundation\Application" not found /Users/akmalfadli/Developer/desa-digital/OpenSID-2505.0.0/bootstrap/app.php 7
+[2025-08-14 13:27:15] opensid.ERROR: Severity: error --> Exception: Class "Illuminate\Foundation\Application" not found /Users/akmalfadli/Developer/desa-digital/OpenSID-2505.0.0/bootstrap/app.php 7
+[2025-08-14 13:27:16] opensid.ERROR: Severity: error --> Exception: Class "Illuminate\Foundation\Application" not found /Users/akmalfadli/Developer/desa-digital/OpenSID-2505.0.0/bootstrap/app.php 7
+[2025-08-14 13:27:24] opensid.ERROR: Severity: error --> Exception: Class "Illuminate\Foundation\Application" not found /Users/akmalfadli/Developer/desa-digital/OpenSID-2505.0.0/bootstrap/app.php 7
+[2025-08-14 13:27:37] opensid.ERROR: Severity: error --> Exception: Class "Illuminate\Foundation\Application" not found /Users/akmalfadli/Developer/desa-digital/OpenSID-2505.0.0/bootstrap/app.php 7
+[2025-08-14 13:28:37] opensid.ERROR: Severity: error --> Exception: Class "Illuminate\Foundation\Application" not found /Users/akmalfadli/Developer/desa-digital/wiradesa/bootstrap/app.php 7
+[2025-08-14 13:28:40] opensid.ERROR: Severity: error --> Exception: Class "Illuminate\Foundation\Application" not found /Users/akmalfadli/Developer/desa-digital/wiradesa/bootstrap/app.php 7
+[2025-08-14 13:29:07] opensid.ERROR: Severity: error --> Exception: Class "Illuminate\Foundation\Application" not found /Users/akmalfadli/Developer/desa-digital/wiradesa/bootstrap/app.php 7
+[2025-08-14 13:30:16] opensid.ERROR: Severity: error --> Exception: SQLSTATE[42000]: Syntax error or access violation: 1253 COLLATION 'utf8mb3_general_ci' is not valid for CHARACTER SET 'utf8mb4' (Connection: default, SQL: select * from `config` where `app_key` = base64:V/9UnHo++iTrzf5B6+TJWNECsxp3e6hE9F3NtAIS5Aw= limit 1) /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/illuminate/database/Connection.php 829
+[2025-08-14 13:32:56] opensid.ERROR: Severity: error --> Exception: SQLSTATE[HY000]: General error: 1273 Unknown collation: 'utf8mb4' (Connection: default, SQL: select * from `config` where `app_key` = base64:V/9UnHo++iTrzf5B6+TJWNECsxp3e6hE9F3NtAIS5Aw= limit 1) /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/illuminate/database/Connection.php 829
+[2025-08-14 13:32:56] opensid.ERROR: Severity: error --> Exception: SQLSTATE[HY000]: General error: 1273 Unknown collation: 'utf8mb4' (Connection: default, SQL: select * from `config` where `app_key` = base64:V/9UnHo++iTrzf5B6+TJWNECsxp3e6hE9F3NtAIS5Aw= limit 1) /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/illuminate/database/Connection.php 829
+[2025-08-14 13:33:52] opensid.ERROR: Severity: error --> Exception: SQLSTATE[42000]: Syntax error or access violation: 1253 COLLATION 'utf8mb3_general_ci' is not valid for CHARACTER SET 'utf8mb4' (Connection: default, SQL: select * from `config` where `app_key` = base64:V/9UnHo++iTrzf5B6+TJWNECsxp3e6hE9F3NtAIS5Aw= limit 1) /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/illuminate/database/Connection.php 829
+[2025-08-14 13:33:59] opensid.ERROR: Severity: 8192 --> Creation of dynamic property CI_URI::$config is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/URI.php 102
+[2025-08-14 13:33:59] opensid.ERROR: Severity: 8192 --> Creation of dynamic property MY_Router::$uri is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Router.php 128
+[2025-08-14 13:33:59] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$benchmark is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 13:33:59] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$hooks is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 13:33:59] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$config is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 13:33:59] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$utf8 is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 13:33:59] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$uri is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 13:33:59] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$exceptions is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 13:33:59] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$router is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 13:33:59] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$output is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 13:33:59] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$security is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 13:33:59] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$input is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 13:33:59] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$lang is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 13:33:59] opensid.ERROR: Severity: error --> Exception: SQLSTATE[42000]: Syntax error or access violation: 1253 COLLATION 'utf8mb3_general_ci' is not valid for CHARACTER SET 'utf8mb4' (Connection: default, SQL: select * from `config` where `app_key` = base64:V/9UnHo++iTrzf5B6+TJWNECsxp3e6hE9F3NtAIS5Aw= limit 1) /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/illuminate/database/Connection.php 829
+[2025-08-14 13:34:00] opensid.ERROR: Severity: 8192 --> Creation of dynamic property CI_URI::$config is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/URI.php 102
+[2025-08-14 13:34:00] opensid.ERROR: Severity: 8192 --> Creation of dynamic property MY_Router::$uri is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Router.php 128
+[2025-08-14 13:34:00] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$benchmark is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 13:34:00] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$hooks is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 13:34:00] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$config is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 13:34:00] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$utf8 is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 13:34:00] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$uri is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 13:34:00] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$exceptions is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 13:34:00] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$router is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 13:34:00] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$output is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 13:34:00] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$security is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 13:34:00] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$input is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 13:34:00] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$lang is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 13:34:00] opensid.ERROR: Severity: error --> Exception: SQLSTATE[42000]: Syntax error or access violation: 1253 COLLATION 'utf8mb3_general_ci' is not valid for CHARACTER SET 'utf8mb4' (Connection: default, SQL: select * from `config` where `app_key` = base64:V/9UnHo++iTrzf5B6+TJWNECsxp3e6hE9F3NtAIS5Aw= limit 1) /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/illuminate/database/Connection.php 829
+[2025-08-14 13:34:53] opensid.ERROR: Severity: 8192 --> Creation of dynamic property CI_URI::$config is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/URI.php 102
+[2025-08-14 13:34:53] opensid.ERROR: Severity: 8192 --> Creation of dynamic property MY_Router::$uri is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Router.php 128
+[2025-08-14 13:34:53] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$benchmark is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 13:34:53] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$hooks is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 13:34:53] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$config is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 13:34:53] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$utf8 is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 13:34:53] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$uri is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 13:34:53] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$exceptions is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 13:34:53] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$router is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 13:34:53] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$output is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 13:34:53] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$security is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 13:34:53] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$input is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 13:34:53] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$lang is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 13:34:53] opensid.ERROR: Severity: error --> Exception: SQLSTATE[HY000]: General error: 1273 Unknown collation: 'utf8mb4' (Connection: default, SQL: select * from `config` where `app_key` = base64:V/9UnHo++iTrzf5B6+TJWNECsxp3e6hE9F3NtAIS5Aw= limit 1) /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/illuminate/database/Connection.php 829
+[2025-08-14 13:37:02] opensid.ERROR: Severity: 8192 --> Creation of dynamic property CI_URI::$config is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/URI.php 102
+[2025-08-14 13:37:02] opensid.ERROR: Severity: 8192 --> Creation of dynamic property MY_Router::$uri is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Router.php 128
+[2025-08-14 13:37:02] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$benchmark is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 13:37:02] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$hooks is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 13:37:02] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$config is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 13:37:02] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$utf8 is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 13:37:02] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$uri is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 13:37:02] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$exceptions is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 13:37:02] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$router is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 13:37:02] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$output is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 13:37:02] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$security is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 13:37:02] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$input is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 13:37:02] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$lang is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 20:37:02] opensid.NOTICE: Berhasil Jalankan Migrasi_2024110171
+[2025-08-14 20:37:03] opensid.NOTICE: Berhasil Jalankan Migrasi_2024120171
+[2025-08-14 20:37:04] opensid.NOTICE: Berhasil Jalankan Migrasi_2025010171
+[2025-08-14 20:37:04] opensid.NOTICE: Berhasil Jalankan Migrasi_2025010871
+[2025-08-14 20:37:04] opensid.NOTICE: Berhasil Jalankan Migrasi_2025011551
+[2025-08-14 20:37:04] opensid.NOTICE: Berhasil Jalankan Migrasi_2025070971
+[2025-08-14 20:37:04] opensid.NOTICE: Berhasil Jalankan Migrasi_2025080101
+[2025-08-14 20:37:04] opensid.NOTICE: Berhasil Jalankan migrasi_surat_bawaan
+[2025-08-14 20:37:04] opensid.NOTICE: Berhasil Jalankan migrasi_beta
+[2025-08-14 20:37:04] opensid.NOTICE: Berhasil Jalankan migrasi_rev
+[2025-08-14 20:37:04] opensid.NOTICE: Berhasil Jalankan migrasi_umum
+[2025-08-14 20:37:04] opensid.NOTICE: Versi database sudah terbaru
+[2025-08-14 20:37:05] opensid.ERROR: Severity: error --> Exception: View [partials.artikel.index] not found. /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/illuminate/view/FileViewFinder.php 137
+[2025-08-14 20:43:51] opensid.NOTICE: Berhasil Jalankan Migrasi_2025080101
+[2025-08-14 20:43:51] opensid.NOTICE: Berhasil Jalankan migrasi_surat_bawaan
+[2025-08-14 20:43:51] opensid.NOTICE: Berhasil Jalankan migrasi_beta
+[2025-08-14 20:43:51] opensid.NOTICE: Berhasil Jalankan migrasi_rev
+[2025-08-14 20:43:51] opensid.NOTICE: Berhasil Jalankan migrasi_umum
+[2025-08-14 20:43:51] opensid.NOTICE: Versi database sudah terbaru
+[2025-08-14 20:44:08] opensid.NOTICE: Mulai hapus tabel awal
+[2025-08-14 20:44:14] opensid.NOTICE: Selesai hapus tabel awal
+[2025-08-14 20:44:27] opensid.NOTICE: Tabel tweb_desa_pamong collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:27] opensid.NOTICE: Tabel keuangan_master collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:27] opensid.NOTICE: Tabel analisis_indikator collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:27] opensid.NOTICE: Tabel analisis_periode collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:27] opensid.NOTICE: Tabel program collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:27] opensid.NOTICE: Tabel kia collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:27] opensid.NOTICE: Tabel posyandu collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:27] opensid.NOTICE: Tabel tweb_penduduk_mandiri collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:27] opensid.NOTICE: Tabel tweb_surat_format collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:27] opensid.NOTICE: Tabel analisis_ref_subjek collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:27] opensid.NOTICE: Tabel tweb_wil_clusterdesa collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:27] opensid.NOTICE: Tabel config collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:27] opensid.NOTICE: Tabel cdesa collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:27] opensid.NOTICE: Tabel user_grup collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:27] opensid.NOTICE: Tabel user collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:27] opensid.NOTICE: Tabel tweb_keluarga collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:28] opensid.NOTICE: Tabel artikel collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:28] opensid.NOTICE: Tabel analisis_master collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:28] opensid.NOTICE: Tabel dtks collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:28] opensid.NOTICE: Tabel kontak_grup collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:28] opensid.NOTICE: Tabel tweb_rtm collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:28] opensid.NOTICE: Tabel analisis_parameter collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:28] opensid.NOTICE: Tabel tweb_penduduk collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:28] opensid.NOTICE: Tabel area collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:28] opensid.NOTICE: Tabel mutasi_inventaris_jalan collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:28] opensid.NOTICE: Tabel mutasi_inventaris_gedung collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:28] opensid.NOTICE: Tabel keuangan_ref_desa collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:28] opensid.NOTICE: Tabel sentitems collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:28] opensid.NOTICE: Tabel ref_persil_mutasi collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:28] opensid.NOTICE: Tabel log_backup collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:28] opensid.NOTICE: Tabel ref_penduduk_bahasa collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:28] opensid.NOTICE: Tabel keuangan_ref_sumber collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:28] opensid.NOTICE: Tabel disposisi_surat_masuk collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:28] opensid.NOTICE: Tabel migrasi collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:28] opensid.NOTICE: Tabel suplemen_terdata collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:28] opensid.NOTICE: Tabel buku_keperluan collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:28] opensid.NOTICE: Tabel keuangan_ref_rek4 collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:28] opensid.NOTICE: Tabel cdesa_penduduk collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:28] opensid.NOTICE: Tabel fcm_token collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:29] opensid.NOTICE: Tabel sys_traffic collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:29] opensid.NOTICE: Tabel inventaris_asset collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:29] opensid.NOTICE: Tabel gambar_gallery collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:29] opensid.NOTICE: Tabel ref_asal_tanah_kas collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:29] opensid.NOTICE: Tabel analisis_partisipasi collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:29] opensid.NOTICE: Tabel kehadiran_jam_kerja collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:29] opensid.NOTICE: Tabel agenda collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:29] opensid.NOTICE: Tabel inventaris_kontruksi collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:29] opensid.NOTICE: Tabel keuangan_ta_anggaran_rinci collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:29] opensid.NOTICE: Tabel notifikasi collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:29] opensid.NOTICE: Tabel keuangan_ta_rab_sub collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:29] opensid.NOTICE: Tabel keuangan_ref_neraca_close collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:29] opensid.NOTICE: Tabel produk collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:29] opensid.NOTICE: Tabel widget collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:29] opensid.NOTICE: Tabel komentar collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:29] opensid.NOTICE: Tabel keuangan_ref_rek3 collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:29] opensid.NOTICE: Tabel line collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:29] opensid.NOTICE: Tabel inventaris_tanah collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:29] opensid.NOTICE: Tabel surat_masuk collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:29] opensid.NOTICE: Tabel covid19_pemudik collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:29] opensid.NOTICE: Tabel anjungan_menu collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:29] opensid.NOTICE: Tabel keuangan_ref_rek2 collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:29] opensid.NOTICE: Tabel dtks_ref_lampiran collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:29] opensid.NOTICE: Tabel ref_sinkronisasi collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:30] opensid.NOTICE: Tabel setting_modul collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:30] opensid.NOTICE: Tabel gis_simbol collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:30] opensid.NOTICE: Tabel keuangan_ref_bidang collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:30] opensid.NOTICE: Tabel keuangan_ta_pajak_rinci collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:30] opensid.NOTICE: Tabel analisis_respon_bukti collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:30] opensid.NOTICE: Tabel keuangan_ta_triwulan_rinci collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:30] opensid.NOTICE: Tabel grup_akses collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:30] opensid.NOTICE: Tabel pengaduan collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:30] opensid.NOTICE: Tabel inventaris_gedung collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:30] opensid.NOTICE: Tabel keuangan_ref_rek1 collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:30] opensid.NOTICE: Tabel dtks_lampiran collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:30] opensid.NOTICE: Tabel tweb_penduduk_status collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:30] opensid.NOTICE: Tabel keuangan_ref_korolari collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:30] opensid.NOTICE: Tabel pesan_mandiri collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:30] opensid.NOTICE: Tabel klasifikasi_surat collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:30] opensid.NOTICE: Tabel keuangan_ta_saldo_awal collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:30] opensid.NOTICE: Tabel keuangan_ta_rpjm_misi collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:30] opensid.NOTICE: Tabel keuangan_ta_anggaran collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:30] opensid.NOTICE: Tabel kehadiran_alasan_keluar collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:30] opensid.NOTICE: Tabel tweb_rtm_hubungan collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:30] opensid.NOTICE: Tabel buku_tamu collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:30] opensid.NOTICE: Tabel keuangan_ta_spp collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:30] opensid.NOTICE: Tabel ref_jabatan collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:30] opensid.NOTICE: Tabel tweb_status_ktp collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:31] opensid.NOTICE: Tabel mutasi_inventaris_tanah collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:31] opensid.NOTICE: Tabel keuangan_manual_ref_rek1 collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:31] opensid.NOTICE: Tabel ref_penduduk_hamil collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:31] opensid.NOTICE: Tabel keuangan_ta_spj_sisa collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:31] opensid.NOTICE: Tabel pemilihan collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:31] opensid.NOTICE: Tabel anggota_grup_kontak collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:31] opensid.NOTICE: Tabel tweb_penduduk_pendidikan collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:31] opensid.NOTICE: Tabel pendapat collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:31] opensid.NOTICE: Tabel tanah_desa collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:31] opensid.NOTICE: Tabel keuangan_manual_ref_rek3 collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:31] opensid.NOTICE: Tabel bulanan_anak collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:31] opensid.NOTICE: Tabel kehadiran_hari_libur collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:31] opensid.NOTICE: Tabel log_sinkronisasi collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:31] opensid.NOTICE: Tabel pesan_detail collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:31] opensid.NOTICE: Tabel keuangan_manual_ref_rek2 collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:31] opensid.NOTICE: Tabel keuangan_ta_spj_bukti collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:31] opensid.NOTICE: Tabel setting_aplikasi collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:31] opensid.NOTICE: Tabel keuangan_ta_tbp collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:31] opensid.NOTICE: Tabel tweb_status_dasar collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:31] opensid.NOTICE: Tabel kehadiran_pengaduan collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:31] opensid.NOTICE: Tabel keuangan_ta_bidang collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:31] opensid.NOTICE: Tabel ref_penduduk_kursus collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:31] opensid.NOTICE: Tabel ref_pindah collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:31] opensid.NOTICE: Tabel keuangan_ta_triwulan collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:32] opensid.NOTICE: Tabel suplemen collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:32] opensid.NOTICE: Tabel laporan_sinkronisasi collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:32] opensid.NOTICE: Tabel keuangan_manual_rinci_tpl collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:32] opensid.NOTICE: Tabel program_peserta collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:32] opensid.NOTICE: Tabel keuangan_ta_spj_rinci collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:32] opensid.NOTICE: Tabel sensor_data collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:32] opensid.NOTICE: Tabel tweb_penduduk_pekerjaan collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:32] opensid.NOTICE: Tabel keuangan_ref_bunga collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:32] opensid.NOTICE: Tabel keuangan_ref_perangkat collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:32] opensid.NOTICE: Tabel menu collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:32] opensid.NOTICE: Tabel log_surat collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:32] opensid.NOTICE: Tabel keuangan_ta_rpjm_kegiatan collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:32] opensid.NOTICE: Tabel tweb_penduduk_umur collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:32] opensid.NOTICE: Tabel inventaris_jalan collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:32] opensid.NOTICE: Tabel log_tolak collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:32] opensid.NOTICE: Tabel surat_keluar collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:32] opensid.NOTICE: Tabel covid19_pantau collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:32] opensid.NOTICE: Tabel inventaris_peralatan collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:32] opensid.NOTICE: Tabel tweb_penduduk_kawin collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:32] opensid.NOTICE: Tabel analisis_ref_state collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:32] opensid.NOTICE: Tabel alias_kodeisian collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:32] opensid.NOTICE: Tabel password_resets collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:33] opensid.NOTICE: Tabel tweb_penduduk_hubungan collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:33] opensid.NOTICE: Tabel statistics collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:33] opensid.NOTICE: Tabel urls collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:33] opensid.NOTICE: Tabel keuangan_ta_rab_rinci collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:33] opensid.NOTICE: Tabel keuangan_ref_potongan collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:33] opensid.NOTICE: Tabel fcm_token_mandiri collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:33] opensid.NOTICE: Tabel mutasi_inventaris_asset collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:33] opensid.NOTICE: Tabel keuangan_ta_mutasi collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:33] opensid.NOTICE: Tabel login_attempts collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:33] opensid.NOTICE: Tabel tweb_keluarga_sejahtera collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:33] opensid.NOTICE: Tabel keuangan_ref_bel_operasional collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:33] opensid.NOTICE: Tabel point collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:33] opensid.NOTICE: Tabel ref_penduduk_bidang collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:33] opensid.NOTICE: Tabel log_login collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:33] opensid.NOTICE: Tabel analisis_respon_hasil collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:33] opensid.NOTICE: Tabel keuangan_ta_desa collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:33] opensid.NOTICE: Tabel ref_peristiwa collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:33] opensid.NOTICE: Tabel teks_berjalan collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:33] opensid.NOTICE: Tabel ref_peruntukan_tanah_kas collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:33] opensid.NOTICE: Tabel anjungan collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:33] opensid.NOTICE: Tabel tweb_sakit_menahun collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:33] opensid.NOTICE: Tabel log_penduduk collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:33] opensid.NOTICE: Tabel keuangan_ta_anggaran_log collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 20:44:33] opensid.NOTICE: Tabel keuangan_ta_pencairan collation diubah dari utf8mb3_general_ci menjadi utf8mb4_general_ci.
+[2025-08-14 13:44:53] opensid.ERROR: Severity: error --> Exception: The MAC is invalid. /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/illuminate/encryption/Encrypter.php 222
+[2025-08-14 13:44:54] opensid.ERROR: Severity: error --> Exception: The MAC is invalid. /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/illuminate/encryption/Encrypter.php 222
+[2025-08-14 21:33:01] opensid.ERROR: Telegram responded with an error `404 - Not Found`
+[2025-08-14 21:33:01] opensid.ERROR: Telegram responded with an error `404 - Not Found`
+[2025-08-14 14:33:21] opensid.ERROR: Severity: error --> Exception: Class "AdminModulController" not found /Users/akmalfadli/Developer/desa-digital/wiradesa/Modules/Kehadiran/Http/Controllers/BackEnd/PengaduanController.php 42
+[2025-08-14 22:05:02] opensid.ERROR: Severity: error --> Exception: View [partials.artikel.index] not found. /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/illuminate/view/FileViewFinder.php 137
+[2025-08-14 15:05:19] opensid.ERROR: Severity: 8192 --> Creation of dynamic property CI_URI::$config is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/URI.php 102
+[2025-08-14 15:05:19] opensid.ERROR: Severity: 8192 --> Creation of dynamic property MY_Router::$uri is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Router.php 128
+[2025-08-14 15:05:19] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$benchmark is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:05:19] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$hooks is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:05:19] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$config is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:05:19] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$utf8 is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:05:19] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$uri is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:05:19] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$exceptions is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:05:19] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$router is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:05:19] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$output is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:05:19] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$security is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:05:19] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$input is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:05:19] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$lang is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 22:05:19] opensid.ERROR: Severity: error --> Exception: View [partials.artikel.index] not found. /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/illuminate/view/FileViewFinder.php 137
+[2025-08-14 15:06:00] opensid.ERROR: Severity: 8192 --> Creation of dynamic property CI_URI::$config is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/URI.php 102
+[2025-08-14 15:06:00] opensid.ERROR: Severity: 8192 --> Creation of dynamic property MY_Router::$uri is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Router.php 128
+[2025-08-14 15:06:00] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$benchmark is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:06:00] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$hooks is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:06:00] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$config is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:06:00] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$utf8 is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:06:00] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$uri is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:06:00] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$exceptions is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:06:00] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$router is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:06:00] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$output is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:06:00] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$security is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:06:00] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$input is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:06:00] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$lang is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 22:06:01] opensid.ERROR: Severity: error --> Exception: View [partials.artikel.index] not found. /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/illuminate/view/FileViewFinder.php 137
+[2025-08-14 22:06:14] opensid.ERROR: Severity: error --> Exception: View [partials.artikel.index] not found. /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/illuminate/view/FileViewFinder.php 137
+[2025-08-14 22:06:21] opensid.ERROR: Severity: error --> Exception: View [partials.artikel.index] not found. /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/illuminate/view/FileViewFinder.php 137
+[2025-08-14 15:06:33] opensid.ERROR: Severity: 8192 --> Creation of dynamic property CI_URI::$config is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/URI.php 102
+[2025-08-14 15:06:33] opensid.ERROR: Severity: 8192 --> Creation of dynamic property MY_Router::$uri is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Router.php 128
+[2025-08-14 15:06:33] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$benchmark is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:06:33] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$hooks is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:06:33] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$config is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:06:33] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$utf8 is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:06:33] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$uri is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:06:33] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$exceptions is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:06:33] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$router is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:06:33] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$output is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:06:33] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$security is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:06:33] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$input is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:06:33] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$lang is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 22:06:34] opensid.ERROR: Severity: error --> Exception: View [partials.artikel.index] not found. /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/illuminate/view/FileViewFinder.php 137
+[2025-08-14 15:10:50] opensid.ERROR: Severity: 8192 --> Creation of dynamic property CI_URI::$config is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/URI.php 102
+[2025-08-14 15:10:50] opensid.ERROR: Severity: 8192 --> Creation of dynamic property MY_Router::$uri is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Router.php 128
+[2025-08-14 15:10:50] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$benchmark is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:10:50] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$hooks is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:10:50] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$config is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:10:50] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$utf8 is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:10:50] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$uri is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:10:50] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$exceptions is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:10:50] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$router is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:10:50] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$output is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:10:50] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$security is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:10:50] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$input is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:10:50] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$lang is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:11:25] opensid.ERROR: Severity: 8192 --> Creation of dynamic property CI_URI::$config is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/URI.php 102
+[2025-08-14 15:11:25] opensid.ERROR: Severity: 8192 --> Creation of dynamic property MY_Router::$uri is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Router.php 128
+[2025-08-14 15:11:25] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$benchmark is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:11:25] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$hooks is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:11:25] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$config is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:11:25] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$utf8 is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:11:25] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$uri is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:11:25] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$exceptions is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:11:25] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$router is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:11:25] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$output is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:11:25] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$security is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:11:25] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$input is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:11:25] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$lang is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 22:12:52] opensid.ERROR: Severity: error --> Exception: View [partials.header] not found. (View: /Users/akmalfadli/Developer/desa-digital/wiradesa/desa/themes/perwira/resources/views/template.blade.php) /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/illuminate/view/FileViewFinder.php 137
+[2025-08-14 22:14:01] opensid.ERROR: Severity: error --> Exception: View [full-content] not found. /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/illuminate/view/FileViewFinder.php 137
+[2025-08-14 22:14:31] opensid.ERROR: Severity: error --> Exception: View [partials.header] not found. (View: /Users/akmalfadli/Developer/desa-digital/wiradesa/desa/themes/perwira/resources/views/template.blade.php) (View: /Users/akmalfadli/Developer/desa-digital/wiradesa/desa/themes/perwira/resources/views/template.blade.php) /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/illuminate/view/FileViewFinder.php 137
+[2025-08-14 22:14:32] opensid.ERROR: Severity: error --> Exception: View [partials.header] not found. (View: /Users/akmalfadli/Developer/desa-digital/wiradesa/desa/themes/perwira/resources/views/template.blade.php) (View: /Users/akmalfadli/Developer/desa-digital/wiradesa/desa/themes/perwira/resources/views/template.blade.php) /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/illuminate/view/FileViewFinder.php 137
+[2025-08-14 22:15:06] opensid.ERROR: Severity: error --> Exception: View [partials.header] not found. (View: /Users/akmalfadli/Developer/desa-digital/wiradesa/desa/themes/perwira/resources/views/template.blade.php) (View: /Users/akmalfadli/Developer/desa-digital/wiradesa/desa/themes/perwira/resources/views/template.blade.php) /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/illuminate/view/FileViewFinder.php 137
+[2025-08-14 22:19:32] opensid.ERROR: Severity: error --> Exception: View [partials.header] not found. (View: /Users/akmalfadli/Developer/desa-digital/wiradesa/desa/themes/perwira/resources/views/template.blade.php) (View: /Users/akmalfadli/Developer/desa-digital/wiradesa/desa/themes/perwira/resources/views/template.blade.php) /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/illuminate/view/FileViewFinder.php 137
+[2025-08-14 15:19:44] opensid.ERROR: Severity: 8192 --> Creation of dynamic property CI_URI::$config is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/URI.php 102
+[2025-08-14 15:19:44] opensid.ERROR: Severity: 8192 --> Creation of dynamic property MY_Router::$uri is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Router.php 128
+[2025-08-14 15:19:44] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$benchmark is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:19:44] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$hooks is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:19:44] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$config is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:19:44] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$utf8 is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:19:44] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$uri is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:19:44] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$exceptions is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:19:44] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$router is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:19:44] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$output is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:19:44] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$security is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:19:44] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$input is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:19:44] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$lang is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 22:19:44] opensid.ERROR: Severity: error --> Exception: View [partials.header] not found. (View: /Users/akmalfadli/Developer/desa-digital/wiradesa/desa/themes/perwira/resources/views/template.blade.php) (View: /Users/akmalfadli/Developer/desa-digital/wiradesa/desa/themes/perwira/resources/views/template.blade.php) /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/illuminate/view/FileViewFinder.php 137
+[2025-08-14 15:24:49] opensid.ERROR: Severity: 8192 --> Creation of dynamic property CI_URI::$config is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/URI.php 102
+[2025-08-14 15:24:49] opensid.ERROR: Severity: 8192 --> Creation of dynamic property MY_Router::$uri is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Router.php 128
+[2025-08-14 15:24:49] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$benchmark is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:24:49] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$hooks is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:24:49] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$config is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:24:49] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$utf8 is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:24:49] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$uri is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:24:49] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$exceptions is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:24:49] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$router is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:24:49] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$output is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:24:49] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$security is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:24:49] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$input is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83
+[2025-08-14 15:24:49] opensid.ERROR: Severity: 8192 --> Creation of dynamic property Utama::$lang is deprecated /Users/akmalfadli/Developer/desa-digital/wiradesa/vendor/codeigniter/framework/system/core/Controller.php 83

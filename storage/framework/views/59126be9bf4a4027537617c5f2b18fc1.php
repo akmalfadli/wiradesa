@@ -1,0 +1,23 @@
+<?php
+    $url = $post->url_slug;
+    $abstract = potong_teks(strip_tags($post['isi']), 300);
+    $image = $post['gambar'] && is_file(LOKASI_FOTO_ARTIKEL . 'sedang_' . $post['gambar']) ? AmbilFotoArtikel($post['gambar'], 'sedang') : gambar_desa($desa['logo']);
+?>
+
+<div class="max-w-full w-full bg-white shadow rounded-lg p-3 lg:p-5 border overflow-auto mt-5">
+    <figure class="h-auto lg:h-32 w-1/3 float-left pr-3 pb-3">
+        <img src="<?php echo e($image); ?>" alt="<?php echo e($post['judul']); ?>" class="lg:h-32 object-cover object-center max-w-full mx-auto h-auto">
+    </figure>
+    <div class="space-y-3">
+        <a href="<?php echo e($url); ?>" class="text-h5 hover:text-primary-100"><?php echo e(potong_teks($post['judul'], 80)); ?><?php echo e(strlen($post['judul']) > 80 ? '...' : ''); ?></a>
+        <p style="word-break: break-all;" class="line-clamp-4"><?php echo potong_teks(html_entity_decode($abstract), 100); ?><?php echo e(strlen($abstract) > 100 ? '...' : ''); ?></p>
+        <ul class="inline-flex gap-x-5 gap-y-3 text-xs lg:text-sm text-gray-500 flex-wrap">
+            <li><i class="fas fa-calendar-alt mr-1 text-primary-100"></i> <?php echo e(tgl_indo($post['tgl_upload'])); ?></li>
+            <li><i class="fas fa-user mr-1 text-primary-100"></i> <?php echo e($post['owner']); ?></li>
+            <?php if($post['kategori']): ?>
+                <li><i class="fas fa-bookmark mr-1 text-primary-100"></i> <?php echo e($post['kategori']); ?></li>
+            <?php endif; ?>
+        </ul>
+    </div>
+</div>
+<?php /**PATH /Users/akmalfadli/Developer/desa-digital/wiradesa//storage/app/themes/esensis/resources/views/partials/artikel/list.blade.php ENDPATH**/ ?>
