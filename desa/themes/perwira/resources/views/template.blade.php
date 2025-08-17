@@ -15,28 +15,36 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 </head>
+@php
+    $post = $single_artikel;
+@endphp
 <body class="w-full bg-white">
-    <div class="max-w-6xl mx-auto">
+    <div class="max-w-6xl mx-auto mb-2">
         @include('theme::partials.header')
         @include('theme::partials.hero')
         
-        <div class="px-4 md:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row gap-8 mt-8">
-                @include('theme::partials.history')
-                @include('theme::partials.location')
+        @yield('layout')
+        @if ($artikel === null)
+            @include('theme::partials.artikel.detail')
+        @else
+            <div class="px-4 md:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row gap-8 mt-8">
+                    @include('theme::partials.history')
+                    @include('theme::partials.location')
+                </div>
+                
+                <div class="flex flex-col md:flex-row gap-8 mt-16">
+                    @include('theme::partials.development')
+                    @include('theme::partials.vision')
+                </div>
+                
+                @include('theme::partials.statistics')
+                @include('theme::partials.articles')
+                @include('theme::partials.officials')
             </div>
-            
-            <div class="flex flex-col md:flex-row gap-8 mt-16">
-                @include('theme::partials.development')
-                @include('theme::partials.vision')
-            </div>
-            
-            @include('theme::partials.statistics')
-            @include('theme::partials.articles')
-            @include('theme::partials.officials')
-        </div>
+        @endif
     </div>
-    
+        
     @include('theme::partials.footer')
 
     <script>

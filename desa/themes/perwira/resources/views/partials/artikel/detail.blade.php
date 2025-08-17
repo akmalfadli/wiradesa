@@ -52,6 +52,7 @@
             </a>
         @endif
     @endfor
+    
     @if ($post['dokumen'])
         <div class="alert alert-info">
             <h4 class="text-h6">Dokumen Lampiran</h4>

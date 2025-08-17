@@ -1,4 +1,3 @@
-{{-- resources/views/partials/history.blade.php --}}
 @if ($widgetAktif)
         @foreach ($widgetAktif as $widget)
             @php
@@ -6,7 +5,6 @@
                     'judul_widget' => str_replace('Desa', ucwords(setting('sebutan_desa')), strip_tags($widget['judul'])),
                 ];
             @endphp
-            
                 @if (strtolower($widget['judul']) == "sejarah")
                     <div class="w-full md:w-1/2 relative">
                         <div class="border-l-4 border-green-600 pl-6 py-4">
@@ -28,7 +26,6 @@
                         <div class="absolute top-0 left-0 w-4 h-4 rounded-full bg-green-600 -ml-2"></div>
                         <div class="absolute bottom-0 left-0 w-4 h-4 rounded-full bg-green-600 -ml-2"></div>
                     </div>
-                   
                 @endif
         @endforeach
-    @endif
+ @endif

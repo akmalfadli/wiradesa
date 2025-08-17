@@ -4,10 +4,12 @@
         <div class="flex flex-col md:flex-row justify-between">
             <div class="mb-6 md:mb-0">
                 <div class="flex items-center gap-2 mb-4">
-                    <div class="w-8 h-8 bg-yellow-500 flex items-center justify-center">
-                        <span class="text-green-700 font-bold">D</span>
+                    <div class="w-15 h-8 flex items-center justify-center">
+                        <figure>
+                            <img src="{{ gambar_desa($desa['logo']) }}" alt="Logo {{ ucfirst(setting('sebutan_desa')) . ' ' . ucwords($desa['nama_desa']) }}" class="h-10 mx-auto pb-2">
+                        </figure>
                     </div>
-                    <div>
+                    <div class="mb-2">
                         <p class="text-sm font-semibold">{{ ucfirst(setting('sebutan_desa')) }}</p>
                         <p class="text-sm font-semibold -mt-1">{{ ucwords($desa['nama_desa']) }}</p>
                     </div>

@@ -1,4 +1,3 @@
-
 <?php if($widgetAktif): ?>
         <?php $__currentLoopData = $widgetAktif; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $widget): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
             <?php
@@ -6,7 +5,6 @@
                     'judul_widget' => str_replace('Desa', ucwords(setting('sebutan_desa')), strip_tags($widget['judul'])),
                 ];
             ?>
-            
                 <?php if(strtolower($widget['judul']) == "sejarah"): ?>
                     <div class="w-full md:w-1/2 relative">
                         <div class="border-l-4 border-green-600 pl-6 py-4">
@@ -28,7 +26,6 @@
                         <div class="absolute top-0 left-0 w-4 h-4 rounded-full bg-green-600 -ml-2"></div>
                         <div class="absolute bottom-0 left-0 w-4 h-4 rounded-full bg-green-600 -ml-2"></div>
                     </div>
-                   
                 <?php endif; ?>
         <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-    <?php endif; ?><?php /**PATH /Users/akmalfadli/Developer/desa-digital/wiradesa//desa/themes/perwira/resources/views/partials/history.blade.php ENDPATH**/ ?>
+ <?php endif; ?><?php /**PATH /Users/akmalfadli/Developer/desa-digital/wiradesa//desa/themes/perwira/resources/views/partials/history.blade.php ENDPATH**/ ?>
