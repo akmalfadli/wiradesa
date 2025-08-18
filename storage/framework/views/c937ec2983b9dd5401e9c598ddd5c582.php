@@ -33,7 +33,7 @@
         </span>
     </article>
 
-    <div class="content space-y-2 py-4">
+    <div class="content space-y-2 py-4 text-justify">
         <?php if($post['gambar'] && is_file(LOKASI_FOTO_ARTIKEL . 'sedang_' . $post['gambar'])): ?>
             <a href="<?php echo e(AmbilFotoArtikel($post['gambar'], 'sedang')); ?>" class="h-auto block pb-3" data-fancybox="images">
                 <figure>
@@ -64,6 +64,7 @@
             </a>
         </div>
     <?php endif; ?>
-<?php $__env->stopSection(); ?>
 
+    <?php echo $__env->make('theme::partials.artikel.comment', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+<?php $__env->stopSection(); ?>
 <?php echo $__env->make('theme::layouts.' . $layout, \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /Users/akmalfadli/Developer/desa-digital/wiradesa//desa/themes/perwira/resources/views/partials/artikel/detail.blade.php ENDPATH**/ ?>

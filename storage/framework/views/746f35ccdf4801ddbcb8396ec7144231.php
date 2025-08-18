@@ -9,13 +9,19 @@
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <?php if($artikel->count() > 0): ?>
-            <?php $__currentLoopData = $artikel->take(6); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $post): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+        <?php
+            $filteredArtikel = $artikel->reject(fn($post) => $post['kategori'] === 'agenda');
+        ?>
+
+        <?php if($filteredArtikel->count() > 0): ?>
+            <?php $__currentLoopData = $filteredArtikel->take(6); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $post): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                 <?php echo $__env->make('theme::partials.artikel.list', ['post' => $post], \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+
             
         <?php else: ?>
             <?php echo $__env->make('theme::partials.artikel.empty', ['title' => $title], \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
         <?php endif; ?>
+
     </div>
 </div><?php /**PATH /Users/akmalfadli/Developer/desa-digital/wiradesa//desa/themes/perwira/resources/views/partials/articles.blade.php ENDPATH**/ ?>

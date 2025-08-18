@@ -10,13 +10,19 @@
                     'judul_widget' => str_replace('Desa', ucwords(setting('sebutan_desa')), strip_tags($widget['judul'])),
                 ];
             @endphp
-            <div class="shadow rounded-lg bg-white overflow-hidden">
-                @if ($widget['jenis_widget'] == 3)
-                    <div class="box-header">
-                        <h3 class="box-title">{{ strip_tags($widget['judul']) }}</h3>
-                    </div>
-                    <div class="box-body">
-                        {!! html_entity_decode($widget['isi']) !!}
+            <div class="rounded-lg bg-white overflow-hidden">
+                @if ($widget['jenis_widget'] == 3 && strtolower($widget['judul']) !== 'sejarah' && strtolower($widget['judul']) !== 'pengembangan'  && strtolower($widget['judul']) !== 'visi misi')
+                    <div class="box box-primary box-solid items-center">
+                        <div class="bg-green-600 flex items-center justify-center py-3 px-6 mb-1">
+                            <h3 class="text-md font-semibold text-white text-center">
+                                {{ strtoupper(strip_tags($widget['judul'])) }}
+                            </h3>
+                        </div>
+                        <div class="h-1 bg-green-500 mb-2"></div>
+
+                        <div class="widget-content prose prose-sm max-w-none">
+                            {!! html_entity_decode($widget['isi']) !!}
+                        </div>
                     </div>
                 @else
                     @includeIf("theme::widgets.{$widget['isi']}", $judul_widget)

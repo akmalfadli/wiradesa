@@ -6,7 +6,7 @@
         : gambar_desa($desa['logo']);
 @endphp
 
-<div class="border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow h-96 flex flex-col">
+<div class="border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow h-100 flex flex-col">
     <img src="{{ $image }}" alt="{{ $post['judul'] }}" 
          class="w-full h-48 object-cover flex-shrink-0">
     <div class="p-4 flex flex-col flex-grow">
@@ -18,12 +18,14 @@
         <p class="text-sm text-gray-600 mb-4 flex-grow">
             {!! potong_teks(html_entity_decode($abstract), 100) !!}{{ strlen($abstract) > 100 ? '...' : '' }}
         </p>
+        
         <div class="flex justify-between items-center mt-auto">
             <span class="text-xs text-gray-500">{{ tgl_indo($post['tgl_upload']) }}</span>
             <a href="{{ $url }}" 
                 class="inline-block bg-green-600 text-white px-3 py-1 rounded text-xs hover:bg-green-700 transition-colors">
-                Lihat Detail
+                Lihat Detail 
             </a>
         </div>
+        <span class="text-xs text-gray-500"> {{ $post['owner'] }}</span>
     </div>
 </div>

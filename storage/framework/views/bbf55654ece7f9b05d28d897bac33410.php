@@ -11,7 +11,7 @@
                 </div>
                 <h3 class="font-semibold">Data Warga Administratif</h3>
             </div>
-            <p class="text-xs text-gray-600">Info detail jumlah masyarakat sesuai administrasi Desa Dayeuhkolot</p>
+            <p class="text-xs text-gray-600">Info detail jumlah masyarakat sesuai administrasi <?php echo e(ucfirst(setting('sebutan_desa'))); ?> <?php echo e(ucwords($desa['nama_desa'])); ?></p>
         </div>
         
         <div class="border border-gray-200 rounded-lg p-4 hover:shadow-lg transition-shadow">
@@ -21,7 +21,7 @@
                 </div>
                 <h3 class="font-semibold">Data Pendidikan</h3>
             </div>
-            <p class="text-xs text-gray-600">Info detail jumlah warga pendidikan dalam Desa Dayeuhkolot</p>
+            <p class="text-xs text-gray-600">Info detail jumlah warga pendidikan dalam <?php echo e(ucfirst(setting('sebutan_desa'))); ?> <?php echo e(ucwords($desa['nama_desa'])); ?></p>
         </div>
         
         <div class="border border-gray-200 rounded-lg p-4 hover:shadow-lg transition-shadow">
@@ -31,7 +31,7 @@
                 </div>
                 <h3 class="font-semibold">Data Pendidikan yang Ditempuh</h3>
             </div>
-            <p class="text-xs text-gray-600">Info detail jumlah warga pendidikan yang Ditempuh Di Desa Dayeuhkolot</p>
+            <p class="text-xs text-gray-600">Info detail jumlah warga pendidikan yang Ditempuh Di <?php echo e(ucfirst(setting('sebutan_desa'))); ?> <?php echo e(ucwords($desa['nama_desa'])); ?></p>
         </div>
         
         <div class="border border-gray-200 rounded-lg p-4 hover:shadow-lg transition-shadow">
@@ -41,7 +41,7 @@
                 </div>
                 <h3 class="font-semibold">Data Pekerjaan</h3>
             </div>
-            <p class="text-xs text-gray-600">Info detail jumlah warga pekerjaan di Desa Dayeuhkolot</p>
+            <p class="text-xs text-gray-600">Info detail jumlah warga pekerjaan di <?php echo e(ucfirst(setting('sebutan_desa'))); ?> <?php echo e(ucwords($desa['nama_desa'])); ?></p>
         </div>
         
         <div class="border border-gray-200 rounded-lg p-4 hover:shadow-lg transition-shadow">
@@ -51,7 +51,7 @@
                 </div>
                 <h3 class="font-semibold">Data Agama</h3>
             </div>
-            <p class="text-xs text-gray-600">Info detail jumlah warga agama di Desa Dayeuhkolot</p>
+            <p class="text-xs text-gray-600">Info detail jumlah warga agama di <?php echo e(ucfirst(setting('sebutan_desa'))); ?> <?php echo e(ucwords($desa['nama_desa'])); ?></p>
         </div>
         
         <div class="border border-gray-200 rounded-lg p-4 hover:shadow-lg transition-shadow">
@@ -61,7 +61,7 @@
                 </div>
                 <h3 class="font-semibold">Data Warga Negara</h3>
             </div>
-            <p class="text-xs text-gray-600">Info detail jumlah warga kewarganegaraan di Desa Dayeuhkolot</p>
+            <p class="text-xs text-gray-600">Info detail jumlah warga kewarganegaraan di <?php echo e(ucfirst(setting('sebutan_desa'))); ?> <?php echo e(ucwords($desa['nama_desa'])); ?></p>
         </div>
     </div>
 </div><?php /**PATH /Users/akmalfadli/Developer/desa-digital/wiradesa//desa/themes/perwira/resources/views/partials/statistics.blade.php ENDPATH**/ ?>

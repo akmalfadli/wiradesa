@@ -32,7 +32,7 @@
         </span>
     </article>
 
-    <div class="content space-y-2 py-4">
+    <div class="content space-y-2 py-4 text-justify">
         @if ($post['gambar'] && is_file(LOKASI_FOTO_ARTIKEL . 'sedang_' . $post['gambar']))
             <a href="{{ AmbilFotoArtikel($post['gambar'], 'sedang') }}" class="h-auto block pb-3" data-fancybox="images">
                 <figure>
@@ -62,4 +62,6 @@
             </a>
         </div>
     @endif
+
+    @include('theme::partials.artikel.comment')
 @endsection

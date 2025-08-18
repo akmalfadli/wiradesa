@@ -14,6 +14,7 @@
         @include('theme::commons.source_js')
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
 </head>
 @php
     $post = $single_artikel;
@@ -24,10 +25,8 @@
         @include('theme::partials.hero')
         
         @yield('layout')
-        @if ($artikel === null)
-            @include('theme::partials.artikel.detail')
-        @else
-            <div class="px-4 md:px-6 lg:px-8">
+         @if (request()->path() === '/' || request()->path() === '')
+            <div class="px-2 md:px-6 lg:px-2">
                 <div class="flex flex-col md:flex-row gap-8 mt-8">
                     @include('theme::partials.history')
                     @include('theme::partials.location')

@@ -14,6 +14,7 @@
         <?php echo $__env->make('theme::commons.source_js', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
 </head>
 <?php
     $post = $single_artikel;
@@ -24,10 +25,8 @@
         <?php echo $__env->make('theme::partials.hero', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
         
         <?php echo $__env->yieldContent('layout'); ?>
-        <?php if($artikel === null): ?>
-            <?php echo $__env->make('theme::partials.artikel.detail', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-        <?php else: ?>
-            <div class="px-4 md:px-6 lg:px-8">
+         <?php if(request()->path() === '/' || request()->path() === ''): ?>
+            <div class="px-2 md:px-6 lg:px-2">
                 <div class="flex flex-col md:flex-row gap-8 mt-8">
                     <?php echo $__env->make('theme::partials.history', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
                     <?php echo $__env->make('theme::partials.location', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>

@@ -1,14 +1,23 @@
-<div class="w-full md:w-1/2">
-    <h2 class="text-2xl font-bold mb-3">Lokasi Kami</h2>
-    <p class="text-sm text-gray-700 mb-3">
-        <?php echo e(ucwords(setting('sebutan_kecamatan'))); ?> <?php echo e($desa['nama_kecamatan']); ?> <?php echo e(ucwords(setting('sebutan_kabupaten'))); ?> <?php echo e($desa['nama_kabupaten']); ?> Provinsi <?php echo e($desa['nama_propinsi']); ?>
+<?php defined('BASEPATH') or exit('No direct script access allowed'); ?>
 
-    </p>
+<div class="box box-primary box-solid items-center">
+        <div class="bg-green-600 flex items-center justify-center py-3 px-6 mb-1">
+            <h3 class="text-md font-semibold text-white text-center">
+                <?php echo e(strtoupper($judul_widget)); ?>
+
+            </h3>
+        </div>
+        <div class="h-1 bg-green-500 mb-2"></div>
+
     
-    <div class="relative w-full h-[250px] bg-gray-200 rounded-lg overflow-hidden">
-        <div id="map_canvas" class="w-full h-full"></div>
+    <!-- Single Column Layout -->
+    <div class="space-y-6">
+        <!-- Interactive Map -->
+        <div class="w-full h-80 bg-gradient-to-br from-primary-100 to-primary-200 rounded-xl overflow-hidden relative">
+            <!-- Map Container -->
+            <div id="map_canvas" class="w-full h-full"></div>
 
-        <div class="absolute bottom-4 right-4 bg-white p-3 rounded-lg shadow-lg z-[9999] pointer-events-auto">
+            <div class="absolute bottom-4 right-4 bg-white p-3 rounded-lg shadow-lg z-[9999] pointer-events-auto">
                 <div class="flex items-center gap-2">
                     <div class="bg-green-100 rounded-full p-1">
                         <i data-lucide="users" class="h-5 w-5 text-green-700"></i>
@@ -18,7 +27,8 @@
                         <p class="text-xs text-gray-500"><?php echo e($desa['alamat_kantor']); ?></p>
                     </div>
                 </div>
-            </div> 
+            </div>
+        </div>
     </div>
 </div>
 <style>

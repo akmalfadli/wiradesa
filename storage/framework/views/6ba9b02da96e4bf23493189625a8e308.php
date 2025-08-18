@@ -1,1 +1,1 @@
-<?php echo $__env->make('theme::widgets.aparatur_desa', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /Users/akmalfadli/Developer/desa-digital/wiradesa//desa/themes/perwira/resources/views/partials/officials.blade.php ENDPATH**/ ?>
+<?php echo $__env->make('theme::widgets.aparatur_desa_home', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /Users/akmalfadli/Developer/desa-digital/wiradesa//desa/themes/perwira/resources/views/partials/officials.blade.php ENDPATH**/ ?>
