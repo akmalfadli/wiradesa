@@ -1,2 +1,0 @@
-@extends('theme::template')
-
