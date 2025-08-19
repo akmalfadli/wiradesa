@@ -2049,7 +2049,7 @@
                 <td style="width: 30%; text-align: center; height: 18px;">[NAma_desa], [TgL_surat]</td>
             </tr>
             <tr style="height: 18px;">
-                <td style="width: 30%; text-align: center; height: 18px;">Pejabat Dukcapil Yang Membidangi</td>
+                <td style="width: 30%; text-align: center; height: 18px;"><?= $penandatangan['atas_nama'] ?></td>
                 <td style="width: 40%; height: 18px;"> </td>
                 <td style="width: 30%; text-align: center; height: 18px;">Pelapor</td>
             </tr>
@@ -2059,7 +2059,7 @@
                 <td style="width: 30%; height: 72px;"> </td>
             </tr>
             <tr style="height: 18px;">
-                <td style="width: 30%; text-align: center; height: 18px;"><strong>(<?= str_pad('.', 50, '.', STR_PAD_LEFT); ?>)</strong></td>
+                <td style="width: 30%; text-align: center; height: 18px;"><strong>(<?= padded_string_center(strtoupper($penandatangan['nama']), 30) ?>)</strong></td>
                 <td style="width: 40%; height: 18px;"> </td>
                 <td style="width: 30%; text-align: center; height: 18px;"><strong>(<?= padded_string_center(strtoupper($input['nama_pelapor']), 30) ?>)</strong></td>
             </tr>

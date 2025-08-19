@@ -50,9 +50,9 @@ Semua modifikasi dan pengembangan dalam repository ini tetap mengikuti lisensi G
 ## 📞 Kontak
 
 Untuk pertanyaan terkait kustomisasi ini:
-- **Developer**: [Akmal Fadli]
-- **Email**: [akmalfadli94@gmail.com]
+- **Developer**: Akmal Fadli
+- **Email**: akmalfadli94@gmail.com
 
 ---
 
-**Catatan**: Repository ini adalah fork independent dari OpenSID untuk keperluan pengembangan desa. Untuk mendapatkan update terbaru dari OpenSID utama, lakukan sync dengan upstream repository secara berkala.
+**Catatan**: Repository ini adalah versi ubahan dari OpenSID untuk keperluan pengembangan desa. 
