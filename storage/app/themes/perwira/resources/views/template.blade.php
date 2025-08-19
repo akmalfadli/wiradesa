@@ -15,7 +15,7 @@
         @include('theme::commons.meta')
         @include('theme::commons.source_css')
         @include('theme::commons.source_js')
-    <script src="https://cdn.tailwindcss.com"></script>ß
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     <script src="https://code.highcharts.com/highcharts.js"></script>
 </head>
@@ -51,7 +51,7 @@
 
     <script>
         // Initialize Lucide icons
-        lucide.createIcons();
+        lucide.createIcons()
     </script>
 </body>
 </html>

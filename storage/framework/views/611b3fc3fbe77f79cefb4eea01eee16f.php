@@ -15,7 +15,7 @@
         <?php echo $__env->make('theme::commons.meta', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
         <?php echo $__env->make('theme::commons.source_css', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
         <?php echo $__env->make('theme::commons.source_js', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-    <script src="https://cdn.tailwindcss.com"></script>ß
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     <script src="https://code.highcharts.com/highcharts.js"></script>
 </head>
@@ -51,7 +51,7 @@
 
     <script>
         // Initialize Lucide icons
-        lucide.createIcons();
+        lucide.createIcons()
     </script>
 </body>
 </html><?php /**PATH /Users/akmalfadli/Developer/desa-digital/wiradesa//storage/app/themes/perwira/resources/views/template.blade.php ENDPATH**/ ?>

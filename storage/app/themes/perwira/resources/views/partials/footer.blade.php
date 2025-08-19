@@ -28,15 +28,19 @@
                 <!-- Sosial Media -->
                 <h3 class="font-semibold mb-3">Sosial Media</h3>
                 <div class="flex gap-3 justify-center">
-                    <a href="#" class="bg-green-600 p-2 rounded-md hover:bg-green-500 transition-colors">
-                        <i data-lucide="instagram" class="w-5 h-5"></i>
-                    </a>
-                    <a href="#" class="bg-green-600 p-2 rounded-md hover:bg-green-500 transition-colors">
+                     @foreach ($sosmed as $data)
+                        @if (!empty($data['link']))
+                            <a href="{{ $data['link'] }}" class="bg-green-600 p-2 rounded-md hover:bg-green-500 transition-colors">
+                            <i data-lucide="{{ $data['nama'] }}" class="w-5 h-5"></i>
+                        </a>
+                        @endif
+                    @endforeach
+                    {{-- <a href="#" class="bg-green-600 p-2 rounded-md hover:bg-green-500 transition-colors">
                         <i data-lucide="facebook" class="w-5 h-5"></i>
                     </a>
                     <a href="#" class="bg-green-600 p-2 rounded-md hover:bg-green-500 transition-colors">
                         <i data-lucide="twitter" class="w-5 h-5"></i>
-                    </a>
+                    </a> --}}
                 </div>
             </div>
                     

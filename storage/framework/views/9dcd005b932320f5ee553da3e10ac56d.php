@@ -28,15 +28,14 @@
                 <!-- Sosial Media -->
                 <h3 class="font-semibold mb-3">Sosial Media</h3>
                 <div class="flex gap-3 justify-center">
-                    <a href="#" class="bg-green-600 p-2 rounded-md hover:bg-green-500 transition-colors">
-                        <i data-lucide="instagram" class="w-5 h-5"></i>
-                    </a>
-                    <a href="#" class="bg-green-600 p-2 rounded-md hover:bg-green-500 transition-colors">
-                        <i data-lucide="facebook" class="w-5 h-5"></i>
-                    </a>
-                    <a href="#" class="bg-green-600 p-2 rounded-md hover:bg-green-500 transition-colors">
-                        <i data-lucide="twitter" class="w-5 h-5"></i>
-                    </a>
+                     <?php $__currentLoopData = $sosmed; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $data): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                        <?php if(!empty($data['link'])): ?>
+                            <a href="<?php echo e($data['link']); ?>" class="bg-green-600 p-2 rounded-md hover:bg-green-500 transition-colors">
+                            <i data-lucide="<?php echo e($data['nama']); ?>" class="w-5 h-5"></i>
+                        </a>
+                        <?php endif; ?>
+                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                    
                 </div>
             </div>
                     

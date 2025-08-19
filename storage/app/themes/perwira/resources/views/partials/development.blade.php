@@ -37,9 +37,9 @@
                     <div class="flex justify-around mt-8">
                         <div class="flex flex-col items-center">
                             <div class="bg-green-600 p-2 rounded-lg">
-                                <i data-lucide="tree-pine" class="h-6 w-6 text-white"></i>
+                                <i data-lucide="home" class="h-6 w-6 text-white"></i>
                             </div>
-                            <p class="text-xs mt-1">Lingkungan</p>
+                            <p class="text-xs mt-1">Infrastruktur</p>
                         </div>
                         <div class="flex flex-col items-center">
                             <div class="bg-green-600 p-2 rounded-lg">
@@ -49,16 +49,18 @@
                         </div>
                         <div class="flex flex-col items-center">
                             <div class="bg-green-600 p-2 rounded-lg">
+                                <i data-lucide="tree-pine" class="h-6 w-6 text-white"></i>
+                            </div>
+                            <p class="text-xs mt-1">Lingkungan</p>
+                        </div>
+                        
+                        <div class="flex flex-col items-center">
+                            <div class="bg-green-600 p-2 rounded-lg">
                                 <i data-lucide="book-open" class="h-6 w-6 text-white"></i>
                             </div>
                             <p class="text-xs mt-1">Pendidikan</p>
                         </div>
-                        <div class="flex flex-col items-center">
-                            <div class="bg-green-600 p-2 rounded-lg">
-                                <i data-lucide="home" class="h-6 w-6 text-white"></i>
-                            </div>
-                            <p class="text-xs mt-1">Infrastruktur</p>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
