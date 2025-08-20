@@ -18,12 +18,12 @@
                     <div align="center" style="height: 0.5em;">
                         <h5>Realisasi | Anggaran</h5>
                     </div>
-                    <hr />
+                    <hr/>
                     @foreach ($subdatas as $key => $subdata)
                         @if ($subdata['judul'] != null && $key != 'laporan')
                             <div class="progress-group">
                                 {{ $subdata['judul'] }}<br>
-                                <b>Rp. {{ number_format($subdata['realisasi']) }}| Rp. {{ number_format($subdata['anggaran']) }}</b>
+                                <b>Rp. {{ number_format($subdata['realisasi']) }} | Rp. {{ number_format($subdata['anggaran']) }}</b>
                                 <div class="progress progress-bar-striped" align="right" style="background-color: #27b2c8">
                                     <small></small>
                                     <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" style="width: {{ $subdata['persen'] }}%" aria-valuenow="{{ $subdata['persen'] }}" aria-valuemin="0" aria-valuemax="100">

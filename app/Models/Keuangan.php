@@ -91,7 +91,7 @@ class Keuangan extends BaseModel
                 ->whereRaw('length(template_uuid) in (5)')
                 ->where('template_uuid', 'like', "{$keuangan->template->parent->uuid}%")
                 ->get();
-
+          
             // update jumlah anggaran dan realisasi dari data child dari parent ke 2.
             static::where('tahun', $keuangan->tahun)
                 ->where('template_uuid', $keuangan->template->parent->uuid)

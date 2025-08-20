@@ -65,7 +65,7 @@ class Keuangan
                 $data['pembiayaan'][$i]['sub_pembiayaan_keluar'] = $this->get_subval_pembiayaan_keluar($p['Akun'], $tahun);
                 $data['pembiayaan'][$i]['sub_pembiayaan']        = $this->get_subval_pembiayaan($p['Akun'], $tahun);
             }
-
+            // dd($data);
             return $data;
         }
 
@@ -87,10 +87,12 @@ class Keuangan
 
             $obj->orderBy('Jenis', 'asc');
             $data['jenis_pendapatan'] = $obj->get()->toArray();
-
+            // dd($data['jenis_pendapatan']);
             $data['anggaran']             = ModelsKeuangan::selectRaw('LEFT(template_uuid, 6) AS jenis_pendapatan, SUM(anggaran) AS pagu')->whereRaw('length(template_uuid) >= 8')->where('template_uuid', 'like', '4.%')->where('anggaran', '>', 0)->groupBy('jenis_pendapatan')->where('tahun', $tahun)->get()->toArray();
             $data['realisasi_pendapatan'] = ModelsKeuangan::selectRaw('LEFT(template_uuid, 6) AS jenis_pendapatan, SUM(realisasi) AS realisasi')->whereRaw('length(template_uuid) >= 8')->where('template_uuid', 'like', '4.%')->where('realisasi', '>', 0)->groupBy('jenis_pendapatan')->where('tahun', $tahun)->get()->toArray();
 
+
+            
             return $data;
         }
 
@@ -292,6 +294,7 @@ class Keuangan
         {
             if (! $tahun) $tahun = date('Y');
             $raw_data            = $this->data_keuangan_tema($tahun);
+            // dd($raw_data);
 
             foreach ($raw_data as $keys => $raws) {
                 foreach ($raws as $key => $raw) {

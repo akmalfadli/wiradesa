@@ -203,11 +203,12 @@ class Keuangan_manual extends Admin_Controller
         $child = $keuangan->template?->children?->first();
         
         if ($child) {
+            // dd($child->uuid);
             // update keuangan child pertama dari template
             $keuangan->where(['tahun' => $keuangan->tahun, 'template_uuid' => $child->uuid])
                 ->update([
                     'anggaran'  => $data['nilai_anggaran'],
-                    'realisasi' => $data['nilai_anggaran'],
+                    'realisasi' => $data['nilai_realisasi'],
                 ]);
         }
 

@@ -55,7 +55,7 @@
         <div class="border-t border-green-600 mt-8 pt-4 text-center text-xs">
              <p>Hak cipta situs &copy; <?php echo e(date('Y')); ?> - <?php echo e(ucfirst(setting('sebutan_desa'))); ?> <?php echo e(ucwords($desa['nama_desa'])); ?></p>
                         <p>
-                <a href="https://akmalfadli.github.io" class="underline decoration-pink-500 underline-offset-1 decoration-2" target="_blank" rel="noopener">Perwira <?php echo e($themeVersion); ?></a> -
+                <a href="https://akmalfadli.github.io" class="underline decoration-pink-500 underline-offset-1 decoration-2" target="_blank" rel="noopener">Tema Perwira <?php echo e($themeVersion); ?></a> -
                 <a href="https://opensid.my.id" class="underline decoration-green-500 underline-offset-1 decoration-2" target="_blank" rel="noopener">OpenSID <?php echo e(ambilVersi()); ?></a> 
             </p>
         </div>
