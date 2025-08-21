@@ -5,10 +5,10 @@
 
     </p>
     
-    <div class="relative w-full h-[250px] bg-gray-200 rounded-lg overflow-hidden">
+    <div class="relative w-full h-[250px] bg-gray-200 z-[9] rounded-lg overflow-hidden">
         <div id="map_canvas" class="w-full h-full"></div>
 
-        <div class="absolute bottom-4 right-4 bg-white p-3 rounded-lg shadow-lg z-[9999] pointer-events-auto">
+        <div class="absolute bottom-4 right-4 bg-white p-3 rounded-lg shadow-lg z-[999] pointer-events-auto">
             <div class="flex items-center gap-2">
                 <div class="bg-green-100 rounded-full p-1">
                     <i data-lucide="users" class="h-5 w-5 text-green-700"></i>

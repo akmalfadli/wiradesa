@@ -17,7 +17,7 @@
             <div class="absolute inset-0 flex items-center justify-center">
                 <div class="w-15 h-8 flex items-center justify-center mt-1">
                         <figure>
-                            <img src="{{ gambar_desa($desa['logo']) }}" alt="Logo {{ ucfirst(setting('sebutan_desa')) . ' ' . ucwords($desa['nama_desa']) }}" class="h-10 mx-auto pb-2">
+                            <img src="<?php echo e(gambar_desa($desa['logo'])); ?>" alt="Logo <?php echo e(ucfirst(setting('sebutan_desa')) . ' ' . ucwords($desa['nama_desa'])); ?>" class="h-10 mx-auto pb-2">
                         </figure>
                     </div>
             </div>
@@ -37,3 +37,4 @@
         </div>
     </div>
 </div>
+<?php /**PATH /Users/akmalfadli/Developer/desa-digital/wiradesa//storage/app/themes/perwira/resources/views/commons/loading_screen.blade.php ENDPATH**/ ?>

@@ -24,6 +24,7 @@
 @endphp
 <body class="w-full bg-white">
     <div class="max-w-6xl mx-auto mb-2">
+        @include('theme::commons.loading_screen')
         @include('theme::partials.header')
         @include('theme::partials.hero')
         

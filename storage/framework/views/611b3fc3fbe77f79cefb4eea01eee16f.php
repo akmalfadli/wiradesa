@@ -24,6 +24,7 @@
 ?>
 <body class="w-full bg-white">
     <div class="max-w-6xl mx-auto mb-2">
+        <?php echo $__env->make('theme::commons.loading_screen', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
         <?php echo $__env->make('theme::partials.header', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
         <?php echo $__env->make('theme::partials.hero', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
         
