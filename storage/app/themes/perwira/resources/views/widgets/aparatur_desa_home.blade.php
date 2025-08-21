@@ -35,19 +35,22 @@
                                 
                                 @if ($data['kehadiran'] == 1)
                                     @if ($data['status_kehadiran'] == 'hadir')
-                                        <span class="btn btn-primary w-auto mx-auto inline-block text-sm px-3 py-1">
+                                        <div class="inline-flex items-center px-2 py-1 rounded-full text-xs bg-green-100 text-yellow-700">
+                                        <div class="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
                                             Hadir
-                                        </span>
+                                        </div>
                                     @endif
                                     @if ($data['tanggal'] == date('Y-m-d') && $data['status_kehadiran'] != 'hadir')
-                                        <span class="btn btn-danger w-auto mx-auto inline-block text-sm px-3 py-1">
+                                        <div class="inline-flex items-center px-2 py-1 rounded-full text-xs bg-green-100 text-yellow-700">
+                                        <div class="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
                                             {{ ucwords($data['status_kehadiran']) }}
-                                        </span>
+                                        </div>
                                     @endif
                                     @if ($data['tanggal'] != date('Y-m-d'))
-                                        <span class="btn btn-danger w-auto mx-auto inline-block text-sm px-3 py-1 text-center leading-tight">
-                                            Belum Rekam Kehadiran
-                                        </span>
+                                        <div class="inline-flex items-center px-2 py-1 rounded-full text-xs bg-yellow-100 text-yellow-700">
+                                        <div class="w-2 h-2 bg-yellow-500 rounded-full mr-2"></div>
+                                            Belum Hadir
+                                        </div>
                                     @endif
                                 @endif
                             </div>
@@ -100,19 +103,22 @@
                     
                     @if ($data['kehadiran'] == 1)
                         @if ($data['status_kehadiran'] == 'hadir')
-                            <span class="btn btn-primary w-auto mx-auto inline-block text-xs px-2 py-1">
+                            <div class="inline-flex items-center px-2 py-1 rounded-full text-xs bg-green-100 text-yellow-700">
+                            <div class="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
                                 Hadir
-                            </span>
+                            </div>
                         @endif
                         @if ($data['tanggal'] == date('Y-m-d') && $data['status_kehadiran'] != 'hadir')
-                            <span class="btn btn-danger w-auto mx-auto inline-block text-xs px-2 py-1">
+                            <div class="inline-flex items-center px-2 py-1 rounded-full text-xs bg-green-100 text-yellow-700">
+                            <div class="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
                                 {{ ucwords($data['status_kehadiran']) }}
-                            </span>
+                            </div>
                         @endif
                         @if ($data['tanggal'] != date('Y-m-d'))
-                            <span class="btn btn-danger w-auto mx-auto inline-block text-xs px-2 py-1 text-center leading-tight">
-                                Belum Rekam Kehadiran
-                            </span>
+                            <div class="inline-flex items-center px-2 py-1 rounded-full text-xs bg-yellow-100 text-yellow-700">
+                            <div class="w-2 h-2 bg-yellow-500 rounded-full mr-2"></div>
+                                Belum Hadir
+                            </div>
                         @endif
                     @endif
                 </div>

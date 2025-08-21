@@ -17,16 +17,16 @@
                 </li>
             @endif
 
-            {{-- Pagination Numbers (Max 5) --}}
+            {{-- Pagination Numbers (Max 3) --}}
             @php
                 $current = $paginator->currentPage();
                 $last = $paginator->lastPage();
-                $start = max(1, $current - 2);
-                $end = min($last, $start + 4);
+                $start = max(1, $current - 1);
+                $end = min($last, $start + 2);
                 
                 // Adjust start if we're near the end
-                if ($end - $start < 4) {
-                    $start = max(1, $end - 4);
+                if ($end - $start < 2) {
+                    $start = max(1, $end - 2);
                 }
             @endphp
 
@@ -42,7 +42,7 @@
                 @endif
             @endif
 
-            {{-- Display the 5 page numbers --}}
+            {{-- Display the 3 page numbers --}}
             @for ($page = $start; $page <= $end; $page++)
                 @if ($page == $current)
                     <li class="page-item" aria-current="page">
