@@ -11,9 +11,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name='viewport' content='width=device-width, initial-scale=1' />
 <meta name='google' content='notranslate' />
-<meta name='theme' content='Esensi' />
-<meta name='designer' content='Diki Siswanto' />
-<meta name='theme:designer' content='Diki Siswanto' />
+<meta name='theme' content='Perwira' />
+<meta name='designer' content='Akmal Fadli' />
+<meta name='theme:designer' content='Akmal Fadli' />
 <meta name='theme:version' content='<?php echo e($themeVersion); ?>' />
 <meta name="theme-color" content="#efefef">
 <meta name='keywords'
@@ -75,4 +75,4 @@
     var setting = <?php echo json_encode(setting(), 15, 512) ?>;
     var config = <?php echo json_encode(identitas(), 15, 512) ?>;
 </script>
-<?php /**PATH /Users/akmalfadli/Developer/desa-digital/wiradesa//storage/app/themes/esensi/resources/views/commons/meta.blade.php ENDPATH**/ ?>
+<?php /**PATH /Users/akmalfadli/Developer/desa-digital/wiradesa//storage/app/themes/Perwira/resources/views/commons/meta.blade.php ENDPATH**/ ?>

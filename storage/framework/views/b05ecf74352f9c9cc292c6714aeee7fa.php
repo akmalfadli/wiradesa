@@ -3,4 +3,4 @@
     <?php echo $links->links('theme::commons.pagination-tailwind'); ?>
 
 <?php endif; ?>
-<?php /**PATH /Users/akmalfadli/Developer/desa-digital/wiradesa//storage/app/themes/esensi/resources/views/commons/paging.blade.php ENDPATH**/ ?>
+<?php /**PATH /Users/akmalfadli/Developer/desa-digital/wiradesa//storage/app/themes/Perwira/resources/views/commons/paging.blade.php ENDPATH**/ ?>

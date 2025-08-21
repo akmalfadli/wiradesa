@@ -92,8 +92,8 @@ if (! function_exists('theme_active')) {
                 $default = Theme::PATH_SISTEM . Theme::DEFAULT_THEME;
 
                 return (object) [
-                    'nama'       => 'esensi',
-                    'slug'       => 'esensi',
+                    'nama'       => 'Perwira',
+                    'slug'       => 'Perwira',
                     'versi'      => VERSION,
                     'sistem'     => 1,
                     'path'       => $default,

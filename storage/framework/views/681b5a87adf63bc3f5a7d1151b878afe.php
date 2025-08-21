@@ -29,22 +29,40 @@
     ];
 ?>
 
-<div class="sticky top-5 w-full shadow">
-    <div class="accordion" id="statistikNavigation">
-        <?php $__currentLoopData = $s_links; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $statistik): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+<div class="sticky top-5 w-full shadow-lg">
+    <div class="space-y-2">
+        <?php $__currentLoopData = $s_links; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $index => $statistik): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
             <?php $is_active = in_array($slug_aktif, array_column($statistik['submenu'], 'slug')) ?>
-            <div class="accordion-item bg-white border border-gray-200 overflow-hidden">
-                <h4 class="accordion-header mb-0" id="heading-<?php echo e($statistik['label']); ?>">
-                    <button class="accordion-button relative flex items-center w-full py-4 px-5 text-base text-left bg-white border-0 rounded-none transition focus:outline-none text-h5" type="button" data-bs-toggle="collapse" data-bs-target="#<?php echo e($statistik['target']); ?>"
-                        aria-expanded="<?php echo e($is_active ? 'true' : 'false'); ?>" aria-controls="<?php echo e($statistik['target']); ?>"
+            <div class="bg-white border border-gray-200 rounded-lg overflow-hidden">
+                <!-- Accordion Header -->
+                <button 
+                    type="button"
+                    class="w-full flex items-center justify-between py-4 px-5 text-left bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-inset transition-colors duration-200"
+                    onclick="toggleAccordion('<?php echo e($statistik['target']); ?>', this)"
+                    aria-expanded="<?php echo e($is_active ? 'true' : 'false'); ?>"
+                    aria-controls="<?php echo e($statistik['target']); ?>"
+                >
+                    <div class="flex items-center">
+                        <i class="fas <?php echo e($statistik['icon']); ?> mr-3 text-gray-600"></i>
+                        <span class="text-base font-medium text-gray-900"><?php echo e($statistik['label']); ?></span>
+                    </div>
+                    <svg 
+                        class="w-5 h-5 text-gray-500 transform transition-transform duration-200 <?php echo e($is_active ? 'rotate-180' : ''); ?>"
+                        fill="none" 
+                        viewBox="0 0 24 24" 
+                        stroke="currentColor"
                     >
-                        <i class="fas <?php echo e($statistik['icon']); ?> mr-2"></i> <?php echo e($statistik['label']); ?>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
 
-                    </button>
-                </h4>
-                <div id="<?php echo e($statistik['target']); ?>" class="accordion-collapse collapse <?php echo e($is_active ? 'show' : ''); ?>" data-bs-parent="#statistikNavigation" aria-labelledby="heading-<?php echo e($statistik['target']); ?>">
-                    <div class="accordion-body">
-                        <ul class="divide-y-2">
+                <!-- Accordion Content -->
+                <div 
+                    id="<?php echo e($statistik['target']); ?>" 
+                    class="accordion-content <?php echo e($is_active ? 'max-h-screen' : 'max-h-0'); ?> overflow-hidden transition-all duration-300 ease-in-out"
+                >
+                    <div class="border-t border-gray-200">
+                        <ul class="divide-y divide-gray-100">
                             <?php $__currentLoopData = $statistik['submenu']; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $submenu): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                                 <?php
                                     $stat_slug = in_array($statistik['target'], ['statistikBantuan', 'statistikLainnya']) ? str_replace('first/', '', $submenu['url']) : 'statistik/' . $submenu['key'];
@@ -53,8 +71,14 @@
                                     }
                                 ?>
                                 <?php if(isset($statistik_aktif[$stat_slug])): ?>
-                                    <li id="statistik_13">
-                                        <a href="<?php echo e(site_url($submenu['url'])); ?>" class="px-5 py-2 block <?php echo e($submenu['slug'] == $slug_aktif ? 'bg-primary-100 text-white' : 'hover:cursor-pointer hover:text-primary-100'); ?>"><?php echo e($submenu['label']); ?></a>
+                                    <li>
+                                        <a 
+                                            href="<?php echo e(site_url($submenu['url'])); ?>" 
+                                            class="block px-6 py-3 text-sm <?php echo e($submenu['slug'] == $slug_aktif ? 'bg-green-50 text-green-700 border-r-4 border-green-500 font-medium' : 'text-gray-700 hover:bg-gray-50 hover:text-blue-600'); ?> transition-colors duration-150"
+                                        >
+                                            <?php echo e($submenu['label']); ?>
+
+                                        </a>
                                     </li>
                                 <?php endif; ?>
                             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
@@ -65,4 +89,64 @@
         <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
     </div>
 </div>
-<?php /**PATH /Users/akmalfadli/Developer/desa-digital/wiradesa//storage/app/themes/perwira/resources/views/partials/statistik/sidenav.blade.php ENDPATH**/ ?>
+
+<script>
+function toggleAccordion(targetId, button) {
+    const content = document.getElementById(targetId);
+    const chevron = button.querySelector('svg');
+    const isExpanded = button.getAttribute('aria-expanded') === 'true';
+    
+    // Close all other accordions
+    document.querySelectorAll('.accordion-content').forEach(accordion => {
+        if (accordion.id !== targetId) {
+            accordion.classList.remove('max-h-screen');
+            accordion.classList.add('max-h-0');
+        }
+    });
+    
+    // Reset all chevrons
+    document.querySelectorAll('[onclick^="toggleAccordion"] svg').forEach(svg => {
+        if (svg !== chevron) {
+            svg.classList.remove('rotate-180');
+        }
+    });
+    
+    // Reset all aria-expanded
+    document.querySelectorAll('[onclick^="toggleAccordion"]').forEach(btn => {
+        if (btn !== button) {
+            btn.setAttribute('aria-expanded', 'false');
+        }
+    });
+    
+    // Toggle current accordion
+    if (isExpanded) {
+        content.classList.remove('max-h-screen');
+        content.classList.add('max-h-0');
+        chevron.classList.remove('rotate-180');
+        button.setAttribute('aria-expanded', 'false');
+    } else {
+        content.classList.remove('max-h-0');
+        content.classList.add('max-h-screen');
+        chevron.classList.add('rotate-180');
+        button.setAttribute('aria-expanded', 'true');
+    }
+}
+
+// Initialize accordions on page load
+document.addEventListener('DOMContentLoaded', function() {
+    // Ensure active accordions are properly expanded
+    document.querySelectorAll('[aria-expanded="true"]').forEach(button => {
+        const targetId = button.getAttribute('aria-controls');
+        const content = document.getElementById(targetId);
+        const chevron = button.querySelector('svg');
+        
+        if (content) {
+            content.classList.remove('max-h-0');
+            content.classList.add('max-h-screen');
+        }
+        if (chevron) {
+            chevron.classList.add('rotate-180');
+        }
+    });
+});
+</script><?php /**PATH /Users/akmalfadli/Developer/desa-digital/wiradesa//storage/app/themes/perwira/resources/views/partials/statistik/sidenav.blade.php ENDPATH**/ ?>

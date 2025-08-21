@@ -14,4 +14,4 @@
         <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
     </div>
 </div>
-<?php /**PATH /Users/akmalfadli/Developer/desa-digital/wiradesa//storage/app/themes/esensi/resources/views/widgets/media_sosial.blade.php ENDPATH**/ ?>
+<?php /**PATH /Users/akmalfadli/Developer/desa-digital/wiradesa//storage/app/themes/Perwira/resources/views/widgets/media_sosial.blade.php ENDPATH**/ ?>

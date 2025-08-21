@@ -20,4 +20,4 @@
         </ul>
     </div>
 </div>
-<?php /**PATH /Users/akmalfadli/Developer/desa-digital/wiradesa//storage/app/themes/esensi/resources/views/partials/artikel/list.blade.php ENDPATH**/ ?>
+<?php /**PATH /Users/akmalfadli/Developer/desa-digital/wiradesa//storage/app/themes/Perwira/resources/views/partials/artikel/list.blade.php ENDPATH**/ ?>

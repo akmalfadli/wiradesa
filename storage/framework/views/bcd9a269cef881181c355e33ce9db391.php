@@ -34,4 +34,4 @@
     <?php endif; ?>
 <?php $__env->stopSection(); ?>
 
-<?php echo $__env->make('theme::layouts.right-sidebar', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /Users/akmalfadli/Developer/desa-digital/wiradesa//storage/app/themes/esensi/resources/views/partials/artikel/index.blade.php ENDPATH**/ ?>
+<?php echo $__env->make('theme::layouts.right-sidebar', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /Users/akmalfadli/Developer/desa-digital/wiradesa//storage/app/themes/Perwira/resources/views/partials/artikel/index.blade.php ENDPATH**/ ?>

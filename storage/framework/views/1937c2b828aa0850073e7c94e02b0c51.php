@@ -22,4 +22,4 @@
         </table>
     </div>
 </div>
-<?php /**PATH /Users/akmalfadli/Developer/desa-digital/wiradesa//storage/app/themes/esensi/resources/views/widgets/statistik_pengunjung.blade.php ENDPATH**/ ?>
+<?php /**PATH /Users/akmalfadli/Developer/desa-digital/wiradesa//storage/app/themes/Perwira/resources/views/widgets/statistik_pengunjung.blade.php ENDPATH**/ ?>

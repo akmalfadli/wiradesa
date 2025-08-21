@@ -13,4 +13,4 @@
 <?php endif; ?>
 <link rel="stylesheet" href="<?php echo e(theme_asset('css/style.min.css?' . $themeVersion)); ?>">
 <link rel="stylesheet" href="<?php echo e(theme_asset('css/custom.css?' . $themeVersion)); ?>">
-<?php /**PATH /Users/akmalfadli/Developer/desa-digital/wiradesa//storage/app/themes/esensi/resources/views/commons/source_css.blade.php ENDPATH**/ ?>
+<?php /**PATH /Users/akmalfadli/Developer/desa-digital/wiradesa//storage/app/themes/Perwira/resources/views/commons/source_css.blade.php ENDPATH**/ ?>

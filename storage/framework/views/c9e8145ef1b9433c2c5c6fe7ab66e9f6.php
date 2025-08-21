@@ -25,7 +25,7 @@
 
         <!-- Loading Text -->
         <div class="text-center">
-            <h3 class="text-lg font-semibold text-gray-800 mb-2">Memuat Halaman</h3>
+            <h3 class="text-lg font-semibold text-gray-800 mb-2"><?php echo e(ucfirst(setting('sebutan_desa'))); ?> <?php echo e(ucwords($desa['nama_desa'])); ?></h3>
             <p class="text-sm text-gray-600">Mohon tunggu sebentar...</p>
         </div>
 

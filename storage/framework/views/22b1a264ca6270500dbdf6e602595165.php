@@ -102,7 +102,7 @@
         let dataStats = [];
         $(function() {
             $.ajax({
-                url: `<?php echo e(ci_route('internal_api.statistik', $key)); ?>?tahun=<?php echo e($selected_tahun ?? ''); ?>`,
+                url: `<?php echo e(ci_route('internal_api.statistik', $key)); ?>?tahun=2025`,
                 method: 'get',
                 data: {},
                 beforeSend: function() {

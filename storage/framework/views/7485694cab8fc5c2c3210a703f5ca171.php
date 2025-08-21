@@ -48,4 +48,4 @@
     </div>
 
 </section>
-<?php /**PATH /Users/akmalfadli/Developer/desa-digital/wiradesa//storage/app/themes/esensi/resources/views/commons/category_menu.blade.php ENDPATH**/ ?>
+<?php /**PATH /Users/akmalfadli/Developer/desa-digital/wiradesa//storage/app/themes/Perwira/resources/views/commons/category_menu.blade.php ENDPATH**/ ?>

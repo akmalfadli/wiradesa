@@ -275,7 +275,7 @@ class SettingAplikasiRepository
         if ($pos !== false) {
             $folder = FCPATH . '/desa/themes/' . substr($ci->setting?->web_theme, $pos + strlen('desa/'));
             if (! file_exists($folder)) {
-                $ci->setting->web_theme = 'esensi';
+                $ci->setting->web_theme = 'Perwira';
             }
         }
 

@@ -29,4 +29,4 @@
 <?php if(!setting('inspect_element')): ?>
     <script src="<?php echo e(asset('js/disabled.min.js')); ?>"></script>
 <?php endif; ?>
-<?php /**PATH /Users/akmalfadli/Developer/desa-digital/wiradesa//storage/app/themes/esensi/resources/views/commons/source_js.blade.php ENDPATH**/ ?>
+<?php /**PATH /Users/akmalfadli/Developer/desa-digital/wiradesa//storage/app/themes/Perwira/resources/views/commons/source_js.blade.php ENDPATH**/ ?>

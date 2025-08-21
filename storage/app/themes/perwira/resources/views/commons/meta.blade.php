@@ -11,9 +11,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name='viewport' content='width=device-width, initial-scale=1' />
 <meta name='google' content='notranslate' />
-<meta name='theme' content='Esensi' />
-<meta name='designer' content='Diki Siswanto' />
-<meta name='theme:designer' content='Diki Siswanto' />
+<meta name='theme' content='Perwira' />
+<meta name='designer' content='Akmal Fadli' />
+<meta name='theme:designer' content='Akmal Fadli' />
 <meta name='theme:version' content='{{ $themeVersion }}' />
 <meta name="theme-color" content="#efefef">
 <meta name='keywords'

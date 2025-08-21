@@ -70,7 +70,7 @@ class Statistik extends Web_Controller
             $data['selected_tahun']     = $selectedTahun;
             $data['default_chart_type'] = 'column';
         }
-
+        // dd($data);
         return view('theme::partials.statistik.index', $data);
     }
 

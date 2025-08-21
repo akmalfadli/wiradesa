@@ -63,4 +63,4 @@
         <div id="container_widget" style="width: 100%; height: 300px; margin: 0 auto"></div>
     </div>
 </div>
-<?php /**PATH /Users/akmalfadli/Developer/desa-digital/wiradesa//storage/app/themes/esensi/resources/views/widgets/statistik.blade.php ENDPATH**/ ?>
+<?php /**PATH /Users/akmalfadli/Developer/desa-digital/wiradesa//storage/app/themes/Perwira/resources/views/widgets/statistik.blade.php ENDPATH**/ ?>

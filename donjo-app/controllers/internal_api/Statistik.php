@@ -46,6 +46,7 @@ class Statistik extends Api_Controller
     {
         $statistik = new StatistikRepository();
         $tahun     = request('tahun');
+        dd($tahun);
         $filter    = [];
         if ($tahun) {
             $filter['tahun'] = $tahun;

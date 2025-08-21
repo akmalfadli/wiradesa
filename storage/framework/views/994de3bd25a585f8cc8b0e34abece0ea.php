@@ -45,4 +45,4 @@
         </ul>
     </nav>
 <?php endif; ?>
-<?php /**PATH /Users/akmalfadli/Developer/desa-digital/wiradesa//storage/app/themes/esensi/resources/views/commons/pagination-tailwind.blade.php ENDPATH**/ ?>
+<?php /**PATH /Users/akmalfadli/Developer/desa-digital/wiradesa//storage/app/themes/Perwira/resources/views/commons/pagination-tailwind.blade.php ENDPATH**/ ?>

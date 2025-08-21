@@ -24,4 +24,4 @@
                 class="fas fa-chevron-right text-lg text-white px-3"></i></span>
     </div>
 </section>
-<?php /**PATH /Users/akmalfadli/Developer/desa-digital/wiradesa//storage/app/themes/esensi/resources/views/partials/slider.blade.php ENDPATH**/ ?>
+<?php /**PATH /Users/akmalfadli/Developer/desa-digital/wiradesa//storage/app/themes/Perwira/resources/views/partials/slider.blade.php ENDPATH**/ ?>

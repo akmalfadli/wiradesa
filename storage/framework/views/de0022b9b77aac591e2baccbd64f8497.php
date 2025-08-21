@@ -46,7 +46,7 @@
         <span class="space-y-2">
             <p>Hak cipta situs &copy; <?php echo e(date('Y')); ?> - <?php echo e($nama_desa); ?></p>
             <p>
-                <a href="https://www.trivusi.web.id" class="underline decoration-pink-500 underline-offset-1 decoration-2" target="_blank" rel="noopener">Esensi <?php echo e($themeVersion); ?></a> -
+                <a href="https://www.trivusi.web.id" class="underline decoration-pink-500 underline-offset-1 decoration-2" target="_blank" rel="noopener">Perwira <?php echo e($themeVersion); ?></a> -
                 <a href="https://opensid.my.id" class="underline decoration-green-500 underline-offset-1 decoration-2" target="_blank" rel="noopener">OpenSID <?php echo e(ambilVersi()); ?></a> -
                 <?php if(file_exists('mitra')): ?>
                     Hosting didukung

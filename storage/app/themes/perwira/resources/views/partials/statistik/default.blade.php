@@ -101,7 +101,7 @@
         let dataStats = [];
         $(function() {
             $.ajax({
-                url: `{{ ci_route('internal_api.statistik', $key) }}?tahun={{ $selected_tahun ?? '' }}`,
+                url: `{{ ci_route('internal_api.statistik', $key) }}?tahun=2025`,
                 method: 'get',
                 data: {},
                 beforeSend: function() {
