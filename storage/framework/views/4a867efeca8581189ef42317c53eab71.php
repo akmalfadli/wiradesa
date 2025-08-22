@@ -2,7 +2,7 @@
 
 <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 container px-3 lg:px-5">
     <?php $__currentLoopData = $data_widget; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $subdata_name => $subdatas): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-        <div class="shadow bg-white rounded-lg overflow-hidden">
+        <div class="shadow bg-white rounded-md overflow-hidden">
             <h3 class="bg-primary-100 text-white px-5 py-3 text-h5">
                 <?php echo e(\Illuminate\Support\Str::of($subdatas['laporan'])->when(setting('sebutan_desa') != 'desa', function (\Illuminate\Support\Stringable $string) {
                     return $string->replace('Des', \Illuminate\Support\Str::of(setting('sebutan_desa'))->substr(0, 1)->ucfirst());

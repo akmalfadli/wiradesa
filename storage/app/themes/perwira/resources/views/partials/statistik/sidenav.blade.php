@@ -33,7 +33,7 @@
     <div class="space-y-2">
         @foreach ($s_links as $index => $statistik)
             @php $is_active = in_array($slug_aktif, array_column($statistik['submenu'], 'slug')) @endphp
-            <div class="bg-white border border-gray-200 rounded-lg overflow-hidden">
+            <div class="bg-white border border-gray-200 rounded-xs overflow-hidden">
                 <!-- Accordion Header -->
                 <button 
                     type="button"

@@ -33,7 +33,7 @@
     <div class="space-y-2">
         <?php $__currentLoopData = $s_links; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $index => $statistik): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
             <?php $is_active = in_array($slug_aktif, array_column($statistik['submenu'], 'slug')) ?>
-            <div class="bg-white border border-gray-200 rounded-lg overflow-hidden">
+            <div class="bg-white border border-gray-200 rounded-xs overflow-hidden">
                 <!-- Accordion Header -->
                 <button 
                     type="button"
