@@ -289,6 +289,7 @@
                             } else {
                                 var URL = window.URL || window.webkitURL;
                                 var downloadUrl = URL.createObjectURL(blob);
+                                console.log(downloadUrl);
                                 Swal.fire({
                                     customClass: {
                                         popup: 'swal-lg'
@@ -300,7 +301,7 @@
                                     showCancelButton: false,
                                     showConfirmButton: false,
                                     footer: '<button onclick="Swal.close()" class="btn btn-social btn-danger btn-sm"><i class="fa fa-times"></i> Tutup</button>&ensp;<button onclick="cetak_pdf()" class="btn btn-social btn-success btn-sm"><i class="fa fa-print"></i> Cetak</button>',
-                                    allowOutsideClick: () => false
+                                    allowOutsideClick: () => true
                                 });
                             }
                         } catch (ex) {

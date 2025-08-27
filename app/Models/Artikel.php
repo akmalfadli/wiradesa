@@ -355,17 +355,22 @@ class Artikel extends BaseModel
     {
         $agent = new UserAgent();
 
-        $artikel = self::select('id')
-            ->where(static function ($q) use ($url) {
-                $q->where('slug', $url)->orWhere('id', $url);
-            })->first();
+        $artikel = self::where(function ($q) use ($url) {
+            $q->where('slug', $url)->orWhere('id', $url);
+        })->first();
+
+        if (!$artikel) {
+            return; // no article found → safely exit
+        }
+
         $id = $artikel->id;
-        //membatasi hit hanya satu kali dalam setiap session
+
+        // membatasi hit hanya satu kali dalam setiap session
         if (in_array($id, $_SESSION['artikel'] ?? []) || $agent->is_robot() || crawler()) {
             return;
         }
-        $artikel->increment('hit');
-        $artikel->save();
+
+        $artikel->increment('hit');  // increment will auto-save
         $_SESSION['artikel'][] = $id;
     }
 

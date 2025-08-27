@@ -35,6 +35,7 @@
  *
  */
 
+
 // BACKEND
 // Kehadiran > Jam Kerja
 Route::group('kehadiran_jam_kerja', ['namespace' => 'Kehadiran/BackEnd'], static function (): void {
@@ -91,4 +92,25 @@ Route::group('kehadiran', ['namespace' => 'Kehadiran/FrontEnd'], static function
     Route::get('/masuk', 'PerangkatController@masuk')->name('kehadiran.perangkat.masuk');
     Route::match(['GET', 'POST'], '/check-in-out', 'PerangkatController@checkInOut')->name('kehadiran.perangkat.checkInOut');
     Route::get('/logout', 'PerangkatController@logout')->name('kehadiran.perangkat.logout');
+});
+
+// API Routes for Attendance Module
+Route::group('api/kehadiran', ['namespace' => 'Kehadiran/Api'], static function (): void {
+    
+    // Record attendance (check in/out)
+    Route::post('/record', 'AttendanceController@record')->name('api.kehadiran.record');
+    
+    // Get attendance history
+    Route::post('/history', 'AttendanceController@history')->name('api.kehadiran.history');
+    
+    // Get current attendance status
+    Route::post('/status', 'AttendanceController@status')->name('api.kehadiran.status');
+    
+    // Auto checkout management
+    Route::post('/auto-checkout', 'AttendanceController@auto_checkout')->name('api.kehadiran.auto-checkout');
+    Route::get('/pending-checkout', 'AttendanceController@pending_checkout')->name('api.kehadiran.pending-checkout');
+    
+    // Debug endpoint to check server time (temporary)
+    Route::get('/debug-time', 'AttendanceController@debug_time')->name('api.kehadiran.debug-time');
+        
 });
