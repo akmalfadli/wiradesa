@@ -1,4 +1,4 @@
-{{-- resources/views/partials/header.blade.php --}}
+{{-- resources/views/partials/header.blade.php
 <header class="bg-green-700 text-white">
     <div class="py-3 px-4 md:px-6 lg:px-8">
         <div class="flex justify-between items-center">
@@ -19,4 +19,4 @@
             @include('theme::commons.mobile_menu')
         </div>
     </div>
-</header>
+</header> --}}

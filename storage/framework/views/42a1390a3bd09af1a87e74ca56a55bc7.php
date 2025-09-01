@@ -2,16 +2,101 @@
 <?php
     $bg_header = $latar_website;
 ?>
-<div class="relative h-[250px] sm:h-[300px] md:h-[400px] bg-green-700 text-white overflow-hidden">
+<div class="relative h-[275px] sm:h-[300px] md:h-[350px] lg:h-[450px] bg-green-700 text-white overflow-hidden">
+  
     
-    <div class="absolute inset-0 bg-cover bg-center opacity-50" 
+    <div class="absolute inset-0 bg-cover bg-center" 
          style="background-image: url(<?php echo e($bg_header); ?>);">
     </div>
     
     
-    <div class="relative z-10 h-full flex flex-col md:flex-row">
+    <div class="absolute inset-0 bg-green-700 bg-opacity-50"></div>
+    
+    
+    <div class="absolute top-0 left-0 right-0 z-30">
         
-        <div class="flex-1 flex flex-col justify-center px-4 sm:px-6 md:ml-8 md:px-0">
+        <div class="relative z-10 h-full flex flex-col justify-between">
+            
+            <div class="hidden lg:flex lg:flex-row justify-between pl-8 pr-8 mt-4">
+                <div class="flex items-center gap-2">
+                    <div class="w-15 h-8 flex items-center justify-center">
+                        <a href="<?php echo e(ci_route()); ?>" class="block">
+                            <figure>
+                                <img src="<?php echo e(gambar_desa($desa['logo'])); ?>" alt="Logo <?php echo e(ucfirst(setting('sebutan_desa')) . ' ' . ucwords($desa['nama_desa'])); ?>" class="h-12 mx-auto pb-2">
+                            </figure>
+                        </a>
+                    </div>
+                    <div>
+                        <p class="text-sm font-semibold"><?php echo e(ucfirst(setting('sebutan_desa'))); ?></p>
+                        <p class="text-sm font-semibold -mt-1"><?php echo e(ucwords($desa['nama_desa'])); ?></p>
+                    </div>
+                </div>
+                <div>
+                    <nav class="text-white text-sm" role="navigation">
+                        <ul class="flex">
+                            <?php if(menu_tema()): ?>
+                                <?php $__currentLoopData = menu_tema(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $menu): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                    <?php $has_dropdown = count($menu['childrens'] ?? []) > 0 ?>
+                                    <li class="relative" <?php if($has_dropdown): ?> x-data="{dropdown: false}" <?php endif; ?>>
+                                        <?php $menu_link = $has_dropdown ? '#!' : $menu['link_url'] ?>
+                                        <a href="<?php echo e($menu_link); ?>" class="p-2 inline-block text-white font-medium transition-all duration-300" 
+                                        <?php if($has_dropdown): ?>
+                                            @mouseover="dropdown = true" @mouseleave="dropdown = false" @click="dropdown = !dropdown" 
+                                            aria-expanded="false" aria-haspopup="true"
+                                        <?php endif; ?>
+                                        >
+                                            <?php echo e($menu['nama']); ?>
+
+                                            <?php if($has_dropdown): ?>
+                                                <i class="fas fa-chevron-down text-xs ml-1 inline-block transition duration-300" :class="{ 'transform rotate-180': dropdown }"></i>
+                                            <?php endif; ?>
+                                        </a>
+
+                                        <?php if($has_dropdown): ?>
+                                            <ul class="absolute top-full left-0 min-w-max bg-white/95 backdrop-blur-md text-gray-700 shadow-md invisible transform transition duration-200 origin-top rounded-sm overflow-hidden" 
+                                                :class="{ 'opacity-0 invisible z-[-10] scale-y-50': !dropdown, 'opacity-100 visible z-[9999] scale-y-100': dropdown }" 
+                                                x-transition @mouseover="dropdown = true" @mouseleave="dropdown = false">
+                                                <?php $__currentLoopData = $menu['childrens']; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $childrens): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                                    <li><a href="<?php echo e($childrens['link_url']); ?>" class="block py-3 pl-5 pr-4 hover:bg-primary-200 hover:text-white transition-colors whitespace-nowrap"><?php echo e($childrens['nama']); ?></a></li>
+                                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                                            </ul>
+                                        <?php endif; ?>
+                                    </li>
+                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                            <?php endif; ?>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            
+            
+            <div class="lg:hidden fixed w-full bg-green-700 bg-opacity-80 backdrop-blur-sm flex flex-row justify-between pl-4 pr-4 pt-2 pb-2">
+                <div class="flex items-center gap-2">
+                    <div class="w-10 h-6 flex items-center justify-center">
+                        <a href="<?php echo e(ci_route()); ?>" class="block">
+                            <figure>
+                                <img src="<?php echo e(gambar_desa($desa['logo'])); ?>" 
+                                    alt="Logo <?php echo e(ucfirst(setting('sebutan_desa')) . ' ' . ucwords($desa['nama_desa'])); ?>" 
+                                    class="h-10 mx-auto pb-2">
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="mb-2">
+                        <p class="text-sm font-semibold"><?php echo e(ucfirst(setting('sebutan_desa'))); ?></p>
+                        <p class="text-sm font-semibold -mt-1"><?php echo e(ucwords($desa['nama_desa'])); ?></p>
+                    </div>
+                </div>
+                <div class="mt-2">
+                    <?php echo $__env->make('theme::commons.mobile_menu', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="relative z-10 h-full flex flex-col md:flex-row pt-20 lg:pt-16">
+        
+        <div class="hidden lg:flex flex-1 flex-col justify-center px-4 sm:px-6 md:ml-8 md:px-0 lg:px-6 lg:ml-4 lg:px-0 lg:mt-20 lg:mb-20">
             <h1 class="text-lg sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-1 sm:mb-2 leading-tight">
                 Website Resmi
             </h1>
@@ -27,25 +112,41 @@
             </div>
         </div>
         
-            <div class="md:hidden p-4 mb-4">
-                <div class="bg-green bg-opacity-30 backdrop-blur-sm rounded-lg p-2 sm:p-3 inline-block">
-                    <div class="text-left">
-                        <div id="digital-clock-mobile" class="text-sm sm:text-lg font-mono font-bold mb-1">
-                            00:00:00
-                        </div>
-                        <div id="digital-date-mobile" class="text-xs opacity-90 mb-1 sm:block">
-                            Loading...
-                        </div>
-                        <div id="working-hours-mobile" class="text-xs opacity-80">
-                            
-                        </div>
+        
+        <div class="lg:hidden flex-1 flex flex-col mb-4 items-center">
+            <figure>
+                <img src="<?php echo e(gambar_desa($desa['logo'])); ?>" 
+                        alt="Logo <?php echo e(ucfirst(setting('sebutan_desa')) . ' ' . ucwords($desa['nama_desa'])); ?>" 
+                        class="h-12 mx-auto pb-2">
+            </figure>
+            <h1 class="text-sm font-bold">
+                Website Resmi
+            </h1>
+            
+            <h2 class="text-sm font-bold">
+                <?php echo e(ucfirst(setting('sebutan_desa'))); ?> <?php echo e(ucwords($desa['nama_desa'])); ?>
+
+            </h2>
+            <div class="text-xs text-center">
+                <p><?php echo e(ucfirst(setting('sebutan_kecamatan'))); ?> <?php echo e(ucwords($desa['nama_kecamatan'])); ?> 
+                <?php echo e(ucfirst(setting('sebutan_kabupaten'))); ?> <?php echo e(ucwords($desa['nama_kabupaten'])); ?></p>
+                <p>Provinsi <?php echo e(ucwords($desa['nama_propinsi'])); ?></p>
+            </div>
+            <div class="rounded-lg p-2 sm:p-3 inline-block text-center">
+                <div class="text-center">
+                    <div id="digital-date-mobile" class="text-xs opacity-90 mb-1">
+                        Loading...
+                    </div>
+                    <div id="working-hours-mobile" class="text-xs opacity-80">
+                        
                     </div>
                 </div>
             </div>
+        </div>
 
         
         <div class="hidden md:flex md:flex-col md:justify-center md:items-center md:mr-4 md:min-w-[200px]">
-            <div class="bg-green bg-opacity-20 backdrop-blur-sm rounded-lg p-4">
+            <div class="bg-green bg-opacity-15 backdrop-blur-sm rounded-lg p-4 mb-8">
                 <div class="text-left">
                     <div id="digital-clock" class="text-2xl lg:text-3xl font-mono font-bold mb-1">
                         00:00:00
@@ -60,6 +161,7 @@
             </div>
         </div>
     </div>
+    
     
     <?php if($teks_berjalan): ?>
         <div class="absolute bottom-0 left-0 right-0 bg-white bg-opacity-20 py-1 sm:py-1.5 text-xs z-20">
@@ -80,42 +182,40 @@
     <?php endif; ?>
 </div>
 
-
 <style>
-    /* Ensure text remains readable on mobile */
+    /* Custom width class for dropdown menu */
+    .min-w-max {
+        min-width: max-content;
+    }
+    
+    /* Enhanced text shadows for better readability */
+    .text-shadow-strong {
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.9);
+    }
+    
+    /* Smooth transitions for menu interactions */
+    nav a {
+        transition: all 0.3s ease;
+    }
+    
+    /* Responsive adjustments */
     @media (max-width: 640px) {
-        .hero-title {
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
-        }
-        
-        /* Prevent text overflow on very small screens */
-        .hero-content h1, .hero-content h2 {
-            word-wrap: break-word;
-            hyphens: auto;
-        }
-        
-        /* Better marquee performance on mobile */
         .marquee-container {
             white-space: nowrap;
             overflow: hidden;
         }
     }
     
-    /* Improve clock readability */
-    #digital-clock {
-        text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
-    }
-    
-    /* Better working hours display on mobile */
     @media (max-width: 768px) {
         #working-hours .bg-green-500,
-        #working-hours .bg-red-500 {
+        #working-hours .bg-red-500,
+        #working-hours-mobile .bg-green-500,
+        #working-hours-mobile .bg-red-500 {
             font-size: 10px;
             padding: 2px 6px;
         }
     }
 </style>
-
 
 <script>
 // Working hours data from PHP
@@ -154,7 +254,6 @@ function updateClock() {
     const currentDayIndo = dayNames[currentDay];
     
     // Find working hours for current day
-    let workingHoursText = '';
     let workingHoursHTML = '';
     
     if (workingHoursData && workingHoursData.length > 0) {
@@ -164,51 +263,37 @@ function updateClock() {
         
         if (todaySchedule) {
             if (todaySchedule.status) {
-                let masuk = todaySchedule.jam_masuk.substring(0, 5);   // "08:00"
-                let keluar = todaySchedule.jam_keluar.substring(0, 5); // "16:00"
-                workingHoursText = `${masuk} - ${keluar}`;
+                const masuk = todaySchedule.jam_masuk.substring(0, 5);
+                const keluar = todaySchedule.jam_keluar.substring(0, 5);
+                const workingHoursText = `${masuk} - ${keluar}`;
                 
-                // Current time in HH:MM
-                let current = `${hours}:${minutes}`;
-                
-                // Check if open or closed
-                let isOpen = current >= masuk && current <= keluar;
+                const current = `${hours}:${minutes}`;
+                const isOpen = current >= masuk && current <= keluar;
                 
                 workingHoursHTML = isOpen
                     ? `<span class="bg-green-500 text-white px-2 py-0.5 rounded text-xs">Buka</span> ${workingHoursText}`
                     : `<span class="bg-yellow-500 text-white px-2 py-0.5 rounded text-xs">Tutup</span> ${workingHoursText}`;
             } else {
-                workingHoursText = 'Libur';
                 workingHoursHTML = '<span class="bg-red-500 text-white px-2 py-0.5 rounded text-xs">Libur</span>';
             }
         }
     }
     
-    // Update desktop elements
+    // Update elements
     const clockElement = document.getElementById('digital-clock');
     const dateElement = document.getElementById('digital-date');
     const workingHoursElement = document.getElementById('working-hours');
-    
-    // Update mobile elements
-    const clockMobileElement = document.getElementById('digital-clock-mobile');
     const dateMobileElement = document.getElementById('digital-date-mobile');
     const workingHoursMobileElement = document.getElementById('working-hours-mobile');
     
-    // Update desktop clock
     if (clockElement) clockElement.textContent = timeString;
     if (dateElement) dateElement.textContent = dateString;
-    
-    // Update mobile clock
-    if (clockMobileElement) clockMobileElement.textContent = timeString;
     if (dateMobileElement) dateMobileElement.textContent = dateString;
-    
-    // Update working hours for both desktop and mobile
     if (workingHoursElement) workingHoursElement.innerHTML = workingHoursHTML;
     if (workingHoursMobileElement) workingHoursMobileElement.innerHTML = workingHoursHTML;
 }
 
-
-// Update clock immediately and then every second
+// Initialize clock
 updateClock();
 setInterval(updateClock, 1000);
 </script><?php /**PATH /Users/akmalfadli/Developer/desa-digital/wiradesa//storage/app/themes/perwira/resources/views/partials/hero.blade.php ENDPATH**/ ?>

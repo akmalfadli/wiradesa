@@ -8,10 +8,18 @@
         <main class="lg:w-3/4 w-full space-y-1 bg-white rounded-xs px-4 py-2 lg:py-4 lg:px-5 shadow">
             <?php echo $__env->make('theme::partials.statistik.default', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
             <script>
+                // Pass PHP variables to JavaScript
                 const enable3d = <?php echo e(setting('statistik_chart_3d') ? 1 : 0); ?>;
+                const baseUrl = '<?php echo e(base_url()); ?>';
+                const currentYear = '<?php echo e($selected_tahun ?? ''); ?>';
+                
+                console.log('Statistics Configuration:', {
+                    enable3d: enable3d,
+                    baseUrl: baseUrl,
+                    currentYear: currentYear
+                });
             </script>
         </main>
     </div>
 <?php $__env->stopSection(); ?>
-
 <?php echo $__env->make('theme::template', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /Users/akmalfadli/Developer/desa-digital/wiradesa//storage/app/themes/perwira/resources/views/partials/statistik/index.blade.php ENDPATH**/ ?>

@@ -806,14 +806,14 @@ class AttendanceController extends CI_Controller
         $rentang_masuk = setting('rentang_waktu_masuk') ?: 10;
         $rentang_keluar = setting('rentang_waktu_keluar') ?: 10;
 
-        $jam_masuk_awal = date('H:i', strtotime($jam_kerja->jam_masuk . " -{$rentang_masuk} minutes"));
-        $jam_keluar_akhir = date('H:i', strtotime($jam_kerja->jam_keluar . " +{$rentang_keluar} minutes"));
+        $current_time     = strtotime(date('H:i')); 
+        $jam_masuk_awal   = strtotime($jam_kerja->jam_masuk . " -{$rentang_masuk} minutes");
+        $jam_keluar_akhir = strtotime($jam_kerja->jam_keluar . " +{$rentang_keluar} minutes");
 
-        // Check if current time is within allowed range
         if ($current_time < $jam_masuk_awal || $current_time > $jam_keluar_akhir) {
             return [
-                'status' => false,
-                'message' => "Jam kerja hari ini di mulai dari {$jam_kerja->jam_masuk} hingga {$jam_kerja->jam_keluar} (toleransi: -{$rentang_masuk}mnt/+{$rentang_keluar}mnt). Waktu sekarang: {$current_time}. Timezone: " . date_default_timezone_get()
+                'status'  => false,
+                'message' => "Jam kerja hari ini dimulai dari {$jam_kerja->jam_masuk} hingga {$jam_kerja->jam_keluar} (toleransi: -{$rentang_masuk}mnt/+{$rentang_keluar}mnt). Waktu sekarang: " . date('H:i', $current_time) . ". Timezone: " . date_default_timezone_get()
             ];
         }
 

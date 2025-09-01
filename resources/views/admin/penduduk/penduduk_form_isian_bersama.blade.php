@@ -107,9 +107,9 @@
                                         <input
                                             id="tag_id_card"
                                             name="tag_id_card"
-                                            class="form-control input-sm digits"
+                                            class="form-control input-sm"
                                             type="text"
-                                            minlength="10"
+                                            minlength="5"
                                             maxlength="17"
                                             placeholder="Tag Id Card"
                                             value="{{ $penduduk['tag_id_card'] }}"
