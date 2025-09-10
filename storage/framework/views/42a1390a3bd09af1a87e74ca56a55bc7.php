@@ -7,13 +7,13 @@
     
     <div class="absolute inset-0 bg-cover bg-center" 
          style="background-image: url(<?php echo e($bg_header); ?>);">
-    </div>
+    </header>
     
     
     <div class="absolute inset-0 bg-green-700 bg-opacity-50"></div>
     
     
-    <div class="absolute top-0 left-0 right-0 z-30">
+    <header class="absolute top-0 left-0 right-0 z-30">
         
         <div class="relative z-10 h-full flex flex-col justify-between">
             
@@ -70,24 +70,26 @@
             </div>
             
             
-            <div class="lg:hidden fixed w-full bg-green-700 bg-opacity-80 backdrop-blur-sm flex flex-row justify-between pl-4 pr-4 pt-2 pb-2">
-                <div class="flex items-center gap-2">
-                    <div class="w-10 h-6 flex items-center justify-center">
-                        <a href="<?php echo e(ci_route()); ?>" class="block">
-                            <figure>
-                                <img src="<?php echo e(gambar_desa($desa['logo'])); ?>" 
-                                    alt="Logo <?php echo e(ucfirst(setting('sebutan_desa')) . ' ' . ucwords($desa['nama_desa'])); ?>" 
-                                    class="h-10 mx-auto pb-2">
-                            </figure>
-                        </a>
+            <div class="lg:hidden fixed top-0 left-0 right-0 w-full z-40">
+                <div class="bg-green-700 bg-opacity-80 backdrop-blur-sm flex flex-row justify-between pl-4 pr-4 pt-2 pb-2">
+                    <div class="flex items-center gap-2">
+                        <div class="w-10 h-6 flex items-center justify-center">
+                            <a href="<?php echo e(ci_route()); ?>" class="block">
+                                <figure>
+                                    <img src="<?php echo e(gambar_desa($desa['logo'])); ?>" 
+                                        alt="Logo <?php echo e(ucfirst(setting('sebutan_desa')) . ' ' . ucwords($desa['nama_desa'])); ?>" 
+                                        class="h-10 mx-auto pb-2">
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="mb-2">
+                            <p class="text-sm font-semibold"><?php echo e(ucfirst(setting('sebutan_desa'))); ?></p>
+                            <p class="text-sm font-semibold -mt-1"><?php echo e(ucwords($desa['nama_desa'])); ?></p>
+                        </div>
                     </div>
-                    <div class="mb-2">
-                        <p class="text-sm font-semibold"><?php echo e(ucfirst(setting('sebutan_desa'))); ?></p>
-                        <p class="text-sm font-semibold -mt-1"><?php echo e(ucwords($desa['nama_desa'])); ?></p>
+                    <div class="mt-2">
+                        <?php echo $__env->make('theme::commons.mobile_menu', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
                     </div>
-                </div>
-                <div class="mt-2">
-                    <?php echo $__env->make('theme::commons.mobile_menu', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
                 </div>
             </div>
         </div>
@@ -173,6 +175,7 @@
 
                             <?php if(trim($marquee['tautan']) && $marquee['judul_tautan']): ?>
                                 <a href="<?php echo e($marquee['tautan']); ?>" class="hover:text-link underline"><?php echo e($marquee['judul_tautan']); ?></a>
+                            </li>
                             <?php endif; ?>
                         </span>
                     <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
@@ -196,6 +199,56 @@
     /* Smooth transitions for menu interactions */
     nav a {
         transition: all 0.3s ease;
+    }
+    
+    /* Mobile menu overlay fix */
+    @media (max-width: 1024px) {
+        /* Ensure x-cloak hides elements initially */
+        [x-cloak] { 
+            display: none !important; 
+        }
+        
+        /* Mobile menu navigation specific styles */
+        .mobile-menu-nav {
+            z-index: 999999;
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 100vh;
+            width: 320px;
+            max-width: 90vw;
+        }
+        
+        /* Allow transitions to work properly - don't override transform */
+        .mobile-menu-nav[x-show="menuOpen"] {
+            transform: translateX(0);
+        }
+        
+        /* Force overlay positioning */
+        div[style*="z-index: 999998"] {
+            z-index: 999998;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+        
+        /* Ensure mobile app bar stays below */
+        .lg\\:hidden.fixed {
+            z-index: 40 !important;
+        }
+        
+        /* Prevent body scroll when menu is open */
+        body[style*="overflow: hidden"] {
+            overflow: hidden !important;
+        }
+        
+        /* Ensure smooth transitions */
+        .mobile-menu-nav * {
+            transition-property: transform, opacity;
+            transition-timing-function: ease-out;
+        }
     }
     
     /* Responsive adjustments */
@@ -296,4 +349,65 @@ function updateClock() {
 // Initialize clock
 updateClock();
 setInterval(updateClock, 1000);
+
+// Mobile menu fix - force proper positioning
+document.addEventListener('DOMContentLoaded', function() {
+    // Function to fix mobile menu positioning
+    function fixMobileMenu() {
+        // Find mobile menu elements
+        const mobileMenuDrawer = document.querySelector('nav[role="navigation"][style*="z-index"]');
+        const mobileMenuOverlay = document.querySelector('div[style*="z-index"]:not(nav)');
+        
+        if (mobileMenuDrawer) {
+            // Force styles on the drawer
+            mobileMenuDrawer.style.setProperty('position', 'fixed', 'important');
+            mobileMenuDrawer.style.setProperty('top', '0', 'important');
+            mobileMenuDrawer.style.setProperty('right', '0', 'important');
+            mobileMenuDrawer.style.setProperty('height', '100vh', 'important');
+            mobileMenuDrawer.style.setProperty('z-index', '99999', 'important');
+            mobileMenuDrawer.style.setProperty('transform', 'translateX(0)', 'important');
+        }
+        
+        if (mobileMenuOverlay) {
+            // Force styles on the overlay
+            mobileMenuOverlay.style.setProperty('position', 'fixed', 'important');
+            mobileMenuOverlay.style.setProperty('top', '0', 'important');
+            mobileMenuOverlay.style.setProperty('left', '0', 'important');
+            mobileMenuOverlay.style.setProperty('right', '0', 'important');
+            mobileMenuOverlay.style.setProperty('bottom', '0', 'important');
+            mobileMenuOverlay.style.setProperty('z-index', '99998', 'important');
+        }
+    }
+    
+    // Watch for menu state changes using MutationObserver
+    const observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+            if (mutation.type === 'attributes' && 
+                (mutation.attributeName === 'style' || mutation.attributeName === 'x-show')) {
+                const target = mutation.target;
+                
+                // Check if this is a mobile menu element becoming visible
+                if (target.getAttribute('x-show') === 'menuOpen' || 
+                    target.style.display !== 'none') {
+                    setTimeout(fixMobileMenu, 50);
+                }
+            }
+        });
+    });
+    
+    // Start observing
+    observer.observe(document.body, {
+        attributes: true,
+        subtree: true,
+        attributeFilter: ['style', 'x-show']
+    });
+    
+    // Also fix on any click of menu toggle
+    document.addEventListener('click', function(e) {
+        if (e.target.closest('button[type="button"]') && 
+            e.target.closest('[x-data*="menuOpen"]')) {
+            setTimeout(fixMobileMenu, 100);
+        }
+    });
+});
 </script><?php /**PATH /Users/akmalfadli/Developer/desa-digital/wiradesa//storage/app/themes/perwira/resources/views/partials/hero.blade.php ENDPATH**/ ?>

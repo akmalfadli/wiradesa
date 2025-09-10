@@ -1,5 +1,5 @@
 <section class="sliderx w-full relative group transition-all duration-300 overflow-hidden">
-    <div class="owl-carousel rounded-lg h-48 lg:h-[400px] z-10 relative w-full">
+    <div class="owl-carousel rounded-lg h-48 lg:h-[400px] z-10 relative">
         <?php $__currentLoopData = $slider_gambar['gambar']; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $data): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
             <?php
                 $img = $slider_gambar['lokasi'] . 'sedang_' . $data['gambar'];

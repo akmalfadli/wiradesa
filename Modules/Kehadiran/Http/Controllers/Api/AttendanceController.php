@@ -16,7 +16,7 @@ use Modules\Kehadiran\Models\Kehadiran;
 
 defined('BASEPATH') || exit('No direct script access allowed');
 
-class AttendanceController extends CI_Controller
+class AttendanceController extends WebModulController
 {
     public function __construct()
     {
@@ -191,7 +191,7 @@ class AttendanceController extends CI_Controller
             if (!$user) {
                 $this->jsonResponse([
                     'success' => false,
-                    'message' => 'Invalid tag_id_card'
+                    'message' => 'Invalid ID Card'
                 ], 401);
                 return;
             }
@@ -498,20 +498,20 @@ class AttendanceController extends CI_Controller
         $mac_address = $input['mac_address'];
 
         // Following existing PerangkatController logic
-        $ip_valid = (setting('ip_adress_kehadiran') === $ip_address && setting('ip_adress_kehadiran') !== null);
-        $mac_valid = (setting('mac_adress_kehadiran') === $mac_address && setting('mac_adress_kehadiran') !== null);
+        $ip_valid = setting('ip_adress_kehadiran') === $ip_address && setting('ip_adress_kehadiran') !== null;
+        $mac_valid = setting('mac_adress_kehadiran') === $mac_address && setting('mac_adress_kehadiran') !== null;
         
         // Allow if no settings are configured OR if device matches configured settings
         $cek_gawai = $ip_valid || $mac_valid || 
                     (setting('ip_adress_kehadiran') === null && setting('mac_adress_kehadiran') === null);
 
         if (!$cek_gawai) {
-            $message = 'Gawai ini belum terdaftar.';
+            $message = 'Gawai belum terdaftar.';
             if (setting('ip_adress_kehadiran') !== null && !$ip_valid) {
-                $message .= " IP address tidak sesuai.";
+                $message .= "IP tidak sesuai.";
             }
             if (setting('mac_adress_kehadiran') !== null && !$mac_valid) {
-                $message .= " MAC address tidak sesuai.";
+                $message .= "MAC tidak sesuai.";
             }
         }
 
@@ -822,6 +822,46 @@ class AttendanceController extends CI_Controller
             'message' => 'Working hours valid'
         ];
     }
+    
+    public function pamong()
+    {
+        try {
+            // Get all users with their pamong relationships
+            // Based on your existing code structure, assuming User model has pamong relationship
+            $users = User::with([
+                'pamong'    // Get pamong with jabatan (position) data
+            ])
+            ->whereHas('pamong') // Only get users that have pamong data
+            ->get();
+
+           $pamongData = $users->map(function ($user) {
+                return [
+                    // 'user_id' => $user->id,
+                    // 'pamong_id' => $user->pamong->pamong_id,
+                    'name' => $user->pamong->pamong_nama ?: ($user->pamong->penduduk->nama ?? ''),
+                    'position' => isset($user->pamong->jabatan->nama) ? $user->pamong->jabatan->nama : '',
+                    'tag_id_card' => $user->pamong->penduduk->tag_id_card ?? null,
+                    'photo' => $user->pamong->foto ?? null,
+                ];
+            });
+
+        return  $this->jsonResponse ([
+            'success' => true,
+            'message' => 'Data pamong berhasil diambil',
+            'data' => $pamongData,
+            'total' => $pamongData->count()
+        ]);
+            
+
+        } catch (Exception $e) {
+            return  $this->jsonResponse([
+                'success' => false,
+                'message' => 'Gagal mengambil data pamong: ' . $e->getMessage(),
+                'data' => []
+            ]);
+        }
+    }
+
 
     /**
      * Process attendance (following existing checkInOut() method logic)
@@ -911,7 +951,11 @@ class AttendanceController extends CI_Controller
                         'check_out_time' => $current_time,
                         'duration' => $duration,
                         'status' => $status_kehadiran,
-                        'date' => $today
+                        'date' => $today,
+                        'user' => [
+                            'name' => $user->pamong->pamong_nama ?: ($user->pamong->penduduk->nama ?? ''),
+                            'position' => isset($user->pamong->jabatan->nama) ? $user->pamong->jabatan->nama : ''
+                        ]
                     ]
                 ];
             }

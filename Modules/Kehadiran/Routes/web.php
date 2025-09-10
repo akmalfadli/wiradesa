@@ -96,7 +96,7 @@ Route::group('kehadiran', ['namespace' => 'Kehadiran/FrontEnd'], static function
 
 // API Routes for Attendance Module
 Route::group('api/kehadiran', ['namespace' => 'Kehadiran/Api'], static function (): void {
-    
+    Route::get('/pamong', 'AttendanceController@pamong')->name('api.kehadiran.pamong');
     // Record attendance (check in/out)
     Route::post('/record', 'AttendanceController@record')->name('api.kehadiran.record');
     
